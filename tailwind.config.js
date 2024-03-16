@@ -8,10 +8,23 @@ export default {
     'node_modules/flowbite/**/*.js'
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+      // that is animation class
+      animation: {
+        fade: 'fadeIn 4s',
+      },
+
+      // that is actual animation
+      keyframes: theme => ({
+        fadeIn: {
+					from: { opacity: 0 },
+					to: { opacity: 1 },
+				},
+      }),
+    },
   },
   plugins: [
     require('flowbite/plugin'),
-    require('@tailwindcss/typography')
   ]
 }
