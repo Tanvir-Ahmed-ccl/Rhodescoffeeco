@@ -9,8 +9,7 @@
         </section>
         <div class="grid md:grid-cols-2 gap-10 px-5 md:px-20 py-12 md:py-32">
             <div>
-                <h1 class="text-4xl md:text-6xl">RhodesCoffeeCo mobile coffee shop.</h1>
-                <p class="text-gray-700 mt-8 md:mt-16">RhodesCoffeeCo is a mobile coffee shop that serves the community of Pulaski NY and surrounding areas. We are a family-owned business that is passionate about coffee and serving our community.</p>
+                <h5 class="text-gray-700 text-lg md:text-3xl">RhodesCoffeeCo is a mobile coffee shop that serves the community of Pulaski NY and surrounding areas. We are a family-owned business that is passionate about coffee and serving our community.</h5>
             </div>
             <img src="../../Imgs/about_img2.jpg" alt="about story"/>
         </div>
