@@ -13,44 +13,42 @@
         <!-- Service -->
         <section class="bg-[#E7D1B5] flex flex-col gap-10 py-32 px-5 md:px-20">
             <div class="text-center transition-all animate-fade">
-                <h1 class="text-4xl md:text-6xl font-thin">Catering for all ocasions</h1>
+                <h1 class="text-4xl md:text-6xl">Catering for all ocasions</h1>
                 <div class="border border-y-2 rounded-lg border-yellow-600 w-32 my-5 mx-auto"></div>
                 <!-- <h5 class="mt-12s text-2xl">But not limited to</h5> -->
             </div>
-            <div class="flex flex-col md:flex-row gap-10 transition-all animate-fade">
-                <img src="../../Imgs/history2.jpg" alt="service 1" class="w-96" />
-                <div class="text-center md:text-left">
-                    <h6 class="">
-                        "At Rhodes Coffee Co., we're more than just a coffee truck - we're purveyors of exceptional experiences. Our services extend beyond serving delicious, thoughtfully sourced organic coffee and artisanal products. We specialize in crafting moments that elevate your event or gathering.
-
-                        From intimate gatherings to bustling festivals, our mobile coffee truck brings the perfect blend of flavor and ambiance to any occasion. Whether you're seeking a caffeine boost or a cozy atmosphere, our team is dedicated to delivering top-notch service and hospitality.
-
-                        Additionally, we offer catering services tailored to your needs. Impress your guests with our carefully curated menu featuring a selection of our finest brews and delectable treats. Let Rhodes Coffee Co. elevate your next event with our passion for quality, authenticity, and sustainability."
-                    </h6>
+            <div class="grid md:grid-cols-2 gap-10 transition-all animate-fade">
+                <div>
+                    <img src="../../Imgs/history2.jpg" alt="service 1" class="w-auto" />
+                </div>
+                <div class="text-center md:text-left basis-3/6">
+                    <h6 class="text-lg md:text-2xl mb-4">At Rhodes Coffee Co., we're more than just a coffee truck - we're purveyors of exceptional experiences. Our services extend beyond serving delicious, thoughtfully sourced organic coffee and artisanal products. We specialize in crafting moments that elevate your event or gathering.</h6>
+                    <h6 class="text-lg md:text-2xl mb-4">Additionally, we offer catering services tailored to your needs. Impress your guests with our carefully curated menu featuring a selection of our finest brews and delectable treats. Let Rhodes Coffee Co. elevate your next event with our passion for quality, authenticity, and sustainability.</h6>
+                    <h6 class="text-lg md:text-2xl mb-4">From intimate gatherings to bustling festivals, our mobile coffee truck brings the perfect blend of flavor and ambiance to any occasion. Whether you're seeking a caffeine boost or a cozy atmosphere, our team is dedicated to delivering top-notch service and hospitality.</h6>
                     <YellowBtn class="mx-auto mt-10" text="Contact Us"/>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- Passion -->
         <section style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imgs/started_img_n3.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="text-center py-32 px-5 md:px-20 bg-[#ffffffa6]" >
-                <h1 class="text-4xl md:text-6xl font-thin text-dark">Our Passion</h1>
-                <p class="text-dark px-5 md:px-24 lg:px-48 mt-14">
+            <div class="text-center py-32 px-5 md:px-20" >
+                <h1 class="text-4xl md:text-6xl text-white">Our Passion</h1>
+                <p class="text-gray-200 px-5 md:px-24 lg:px-48 mt-14 text-lg md:text-2xl">
                     Inspired by the road [Rhode] - the unexpected places life takes us, the people we meet, and ultimately - the place we call home - Rhodes Coffee Co. is an homage to our roots. Rooted in the belief that life is best lived authentically and organically - and as close to nature as possible. Rhodes Coffee Co. strives to be a catalyst for positive change with thoughtfully sourced organic coffee & ingredients + small batch, artisanal products at an affordable price
                 </p>
             </div>
         </section>
 
-        <!-- Our Testimonial -->
+        <!-- Testimonial -->
         <section class="flex flex-col gap-10 py-20 px=5 md:px-20">
             <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-thin">Testimonial</h1>
+                <h1 class="text-4xl md:text-6xl">Testimonial</h1>
                 <div class="border border-y-2 rounded-lg border-yellow-600 w-32 mt-5 mx-auto"></div>
             </div>
 
-            <div class="grid mb-8 border border-gray-200 rounded-lg shadow-lg  md:mb-12 md:grid-cols-2 bg-white">
-                <figure v-for="item in coffeeReviews"  class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
+            <div class="grid mb-8 gap-3 md:mb-12 md:grid-cols-2 lg:grid-cols-3 bg-white">
+                <figure v-for="item in coffeeReviews"  class="flex flex-col shadow-lg rounded items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
                     <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 ">
                         <p class="my-4">{{ item.review }}</p>
                     </blockquote>
@@ -68,8 +66,8 @@
 
         <!-- Newsletter -->
         <section class="bg-[#E7D1B5] text-gray-900 flex flex-col text-center items-center gap-10 py-32 px-5 md:px-20">
-            <h1 class="text-4xl md:text-6xl font-thin">Subscribe to our newsletter.</h1>
-            <p>Sign up with your email address to receive news and updates.</p>
+            <h1 class="text-4xl md:text-6xl">Subscribe to our newsletter.</h1>
+            <p class="text-lg">Sign up with your email address to receive news and updates.</p>
             <div class="flex flex-col md:flex-row gap-5">
                 <input type="text" class="p-5 border-0" placeholder="Enter your email address ...">
                 <YellowBtn text="Signup"/>
@@ -80,7 +78,7 @@
         <section class=" flex flex-col items-center text-center gap-10 py-32 px-20"
             style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/started_img_n3.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;"
         >
-            <h1 class="text-4xl md:text-6xl font-thin text-white">Still have questions?</h1>
+            <h1 class="text-4xl md:text-6xl text-white">Still have questions?</h1>
             <YellowBtn class="mx-auto mt-5" text="See our faq"/>
         </section>
 
