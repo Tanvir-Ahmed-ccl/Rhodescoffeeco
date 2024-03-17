@@ -6,3 +6,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontPageController::class, 'welcome']);
 Route::get('/our-story', [FrontPageController::class, 'ourStory']);
+Route::get('faqs', [FrontPageController::class, 'faqs']);
+Route::get('contact', [FrontPageController::class, 'contact']);
+Route::get('login', [FrontPageController::class, 'login']);

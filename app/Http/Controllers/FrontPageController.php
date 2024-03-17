@@ -15,4 +15,19 @@ class FrontPageController extends Controller
     {
         return inertia()->render('FrontPages/OurStory');
     }
+
+    public function faqs()
+    {
+        return inertia()->render('FrontPages/Faqs');
+    }
+
+    public function contact()
+    {
+        return inertia()->render('FrontPages/Contact');
+    }
+
+    public function login()
+    {
+        return inertia()->render('Auth/Login');
+    }
 }
