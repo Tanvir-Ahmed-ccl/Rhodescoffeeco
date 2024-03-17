@@ -19,14 +19,14 @@
             <div class="ms-auto items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul class="flex flex-col p-4 md:p-0 mt-4 text-xl font-medium border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                     <li>
-                        <Link href="/our-story" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page" :class="scrollPosition > 100 ? 'text-black' : 'text-white'" >Our Story</Link>
+                        <Link href="/our-story" class="block py-2 px-3 rounded md:bg-transparent md:p-0" aria-current="page" :class="(scrollPosition > 100)? 'text-black' : 'text-white'"> Our Story</Link>
                     </li>
                     <li>
                         <Link href="/faqs" class="block py-2 px-3 rounded md:p-0 " :class="scrollPosition > 100 ? 'text-gray-800' : 'text-gray-300' ">FAQs</Link>
                     </li>
-                    <!-- <li>
-                        <Link href="/services" class="block py-2 px-3 rounded md:p-0 " :class="scrollPosition > 100 ? 'text-gray-800' : 'text-gray-300' ">Services</Link>
-                    </li> -->
+                    <li>
+                        <a href="/imgs/menu.pdf" target="_blank" class="block py-2 px-3 rounded md:p-0 " :class="scrollPosition > 100 ? 'text-gray-800' : 'text-gray-300' ">Explore Menus</a>
+                    </li>
                     <li>
                         <Link href="/contact" class="block py-2 px-3 rounded md:p-0 " :class="scrollPosition > 100 ? 'text-gray-800' : 'text-gray-300' ">Contact</Link>
                     </li>
@@ -39,7 +39,7 @@
     <!-- Lets get started -->
     <section class="bg-[#D69C46] text-white text-center flex flex-col items-center gap-10 py-32 px-20">
         <h1 class="text-4xl md:text-6xl font-semibold">Let's get Started.</h1>
-        <WhiteBtn class="mx-auto mt-5" text="Contact Us"/>
+        <WhiteBtn class="mx-auto mt-5" text="Contact Us" redirectTo="/contact"/>
     </section>
 
     <!-- Footer -->
@@ -58,7 +58,7 @@
         <div class="">
             <ul class="flex flex-col gap-5">
                 <li class="font-semibold text-xl">Menu</li>
-                <li><Link href="/our-story" class="underline">Our Story</Link></li>
+                <li><Link href="/our-story" class="underline" >Our Story</Link></li>
                 <li><Link href="" class="underline">Services</Link></li>
                 <li><Link href="" class="underline">Gallery</Link></li>
             </ul>
@@ -70,6 +70,7 @@
 import WhiteBtn from '../Components/WhiteBtn.vue';
 import { onMounted, ref } from "vue";
 import { Link } from "@inertiajs/vue3";
+
 const scrollPosition = ref(null);
 
 const updateScroll = () => {

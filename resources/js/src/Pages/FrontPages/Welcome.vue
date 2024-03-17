@@ -6,7 +6,7 @@
             <div class="py-28 text-center md:text-left text-gray-200 transition-all animate-fade">
                 <h1 class="text-5xl md:text-6xl font-semibold">Rhodes Coffee Co.: Brewed from Life's Adventures.</h1>
                 <h5 class="my-10 text-2xl">Coffee Truck for  your catering</h5>
-                <YellowBtn text="Book Now"/>
+                <YellowBtn text="Book Now" redirectTo="/contact"/>
             </div>
         </section>
 
@@ -25,7 +25,7 @@
                     <h6 class="text-lg md:text-2xl mb-4">At Rhodes Coffee Co., we're more than just a coffee truck - we're purveyors of exceptional experiences. Our services extend beyond serving delicious, thoughtfully sourced organic coffee and artisanal products. We specialize in crafting moments that elevate your event or gathering.</h6>
                     <h6 class="text-lg md:text-2xl mb-4">Additionally, we offer catering services tailored to your needs. Impress your guests with our carefully curated menu featuring a selection of our finest brews and delectable treats. Let Rhodes Coffee Co. elevate your next event with our passion for quality, authenticity, and sustainability.</h6>
                     <h6 class="text-lg md:text-2xl mb-16">From intimate gatherings to bustling festivals, our mobile coffee truck brings the perfect blend of flavor and ambiance to any occasion. Whether you're seeking a caffeine boost or a cozy atmosphere, our team is dedicated to delivering top-notch service and hospitality.</h6>
-                    <YellowBtn class="mx-auto" text="Contact Us"/>
+                    <YellowBtn class="mx-auto" text="Contact Us" redirectTo="/contact"/>
                 </div>
             </div>
         </section>
@@ -59,7 +59,7 @@
             style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/started_img_n3.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;"
         >
             <h1 class="text-4xl md:text-6xl text-white">Still have questions?</h1>
-            <YellowBtn class="mx-auto mt-5" text="See our faq"/>
+            <YellowBtn class="mx-auto mt-5" text="See our faq" redirectTo="/faqs"/>
         </section>
 
         <!-- Gallery -->

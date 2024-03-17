@@ -2,9 +2,9 @@
     <AdminLayout>
         <!-- Page Title -->
         <section class="px-5 md:px-20 flex flex-col justify-end" 
-            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/started_img_n5.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/history_inner_bg1.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: top;"
         >
-            <div class="py-20 md:py-44 text-center text-gray-200 transition-all animate-fade">
+            <div class="pt-36 pb-20 md:py-44 text-center text-gray-200 transition-all animate-fade">
                 <h1 class="text-4xl md:text-7xl font-semibold italic">Let's Make it Happen</h1>
             </div>
         </section>
@@ -107,6 +107,10 @@
                     </div>
                 </form>
             </div>
+        </section>
+
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11564.584150330187!2d-76.1269897!3d43.56184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d8358140e9fabf%3A0x2b06051bf3685f38!2sRhodes%20Coffee%20Co!5e0!3m2!1sen!2sus!4v1710689491419!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </AdminLayout>
 </template>

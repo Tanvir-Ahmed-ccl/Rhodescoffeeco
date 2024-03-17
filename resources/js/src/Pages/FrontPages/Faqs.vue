@@ -2,9 +2,9 @@
     <AdminLayout>
         <!-- Page Title -->
         <section class="px-5 md:px-20 flex flex-col justify-end" 
-            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/started_img_n5.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/started_img_n3.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;"
         >
-            <div class="py-20 md:py-44 text-center text-gray-200 transition-all animate-fade">
+            <div class="pt-36 pb-20 md:py-44 text-center text-gray-200 transition-all animate-fade">
                 <h1 class="text-4xl md:text-7xl font-semibold italic">FAQ</h1>
             </div>
         </section>
