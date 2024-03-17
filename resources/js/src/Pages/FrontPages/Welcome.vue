@@ -5,8 +5,8 @@
         >
             <div class="py-28 text-center md:text-left text-gray-200 transition-all animate-fade">
                 <h1 class="text-5xl md:text-6xl font-semibold">Rhodes Coffee Co.: Brewed from Life's Adventures.</h1>
-                <h5 class="mt-10 text-2xl">Coffee Truck for  your catering</h5>
-                <YellowBtn class="mt-10" text="Book Now"/>
+                <h5 class="my-10 text-2xl">Coffee Truck for  your catering</h5>
+                <YellowBtn text="Book Now"/>
             </div>
         </section>
 
@@ -24,8 +24,8 @@
                 <div class="text-center md:text-left basis-3/6">
                     <h6 class="text-lg md:text-2xl mb-4">At Rhodes Coffee Co., we're more than just a coffee truck - we're purveyors of exceptional experiences. Our services extend beyond serving delicious, thoughtfully sourced organic coffee and artisanal products. We specialize in crafting moments that elevate your event or gathering.</h6>
                     <h6 class="text-lg md:text-2xl mb-4">Additionally, we offer catering services tailored to your needs. Impress your guests with our carefully curated menu featuring a selection of our finest brews and delectable treats. Let Rhodes Coffee Co. elevate your next event with our passion for quality, authenticity, and sustainability.</h6>
-                    <h6 class="text-lg md:text-2xl mb-4">From intimate gatherings to bustling festivals, our mobile coffee truck brings the perfect blend of flavor and ambiance to any occasion. Whether you're seeking a caffeine boost or a cozy atmosphere, our team is dedicated to delivering top-notch service and hospitality.</h6>
-                    <YellowBtn class="mx-auto mt-10" text="Contact Us"/>
+                    <h6 class="text-lg md:text-2xl mb-16">From intimate gatherings to bustling festivals, our mobile coffee truck brings the perfect blend of flavor and ambiance to any occasion. Whether you're seeking a caffeine boost or a cozy atmosphere, our team is dedicated to delivering top-notch service and hospitality.</h6>
+                    <YellowBtn class="mx-auto" text="Contact Us"/>
                 </div>
             </div>
         </section>
@@ -41,27 +41,7 @@
         </section>
 
         <!-- Testimonial -->
-        <section class="flex flex-col gap-10 py-20 px=5 md:px-20">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl">Testimonial</h1>
-                <div class="border border-y-2 rounded-lg border-yellow-600 w-32 mt-5 mx-auto"></div>
-            </div>
-
-            <div class="grid mb-8 gap-3 md:mb-12 md:grid-cols-2 lg:grid-cols-3 bg-white">
-                <figure v-for="item in coffeeReviews"  class="flex flex-col shadow-lg rounded items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
-                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 ">
-                        <p class="my-4">{{ item.review }}</p>
-                    </blockquote>
-                    <figcaption class="flex items-center justify-center ">
-                        <img class="rounded-full w-9 h-9" :src="item.image" :alt="item.name" />
-                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                            <div>{{item.name}}</div>
-                            <div class="text-sm text-gray-500  ">{{item.type}}</div>
-                        </div>
-                    </figcaption>    
-                </figure>
-            </div>
-        </section>
+        <TestimonialVue/>
         
 
         <!-- Newsletter -->
@@ -135,6 +115,6 @@
 
 <script setup>
 import YellowBtn from '../../Components/YellowBtn.vue';
-import coffeeReviews from '../../Data/coffeereviews';
+import TestimonialVue from '../../Components/Testimonial.vue';
 import AdminLayout from '../../Layouts/Frontend.vue';
 </script>
