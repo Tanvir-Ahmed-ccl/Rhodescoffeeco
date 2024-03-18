@@ -35,7 +35,18 @@ class SubscribersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validInputs = $request->validate([
+            'phone' => 'required'
+        ]);
+
+        try
+        {
+            Subscribers::create($validInputs);
+            return back()->with('message', 'Thanks for contacting us.');
+        }
+        catch (\Throwable $th) {
+            return back()->with(['exception' => $th->getMessage()]);
+        }
     }
 
     /**

@@ -26,8 +26,8 @@ class FrontPageController extends Controller
         return inertia()->render('FrontPages/Contact');
     }
 
-    public function login()
+    public function blogs()
     {
-        return inertia()->render('Auth/Login');
+        return inertia()->render('FrontPages/Blogs');
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <Link :href="redirectTo" class="uppercase p-3 md:py-5 md:px-8 text-[#D69C46] hover:text-[#d69c46bb] bg-white hover:text-black text-lg md:text-xl ">
+    <Link :href="redirectTo" class="uppercase p-3 md:py-5 md:px-8 text-black bg-white hover:bg-gray-100 text-lg md:text-xl ">
         {{text}}
     </Link>
 </template>
