@@ -4,7 +4,7 @@
         <section class="px-5 md:px-20 flex flex-col justify-end" 
             style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/history_inner_bg1.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: top;"
         >
-            <div class="pt-36 pb-20 md:py-44 text-center text-gray-200 transition-all animate-fade">
+            <div class="pt-36 pb-20 md:py-44 text-center text-[#c8d6ca] transition-all animate-fade">
                 <h1 class="text-4xl md:text-7xl font-semibold italic">Let's Make it Happen</h1>
             </div>
         </section>
@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="mt-3">
-                        <button :disabled="form.processing" class=" float-right uppercase items-center hidden md:flex py-3 px-6 bg-[#D69C46] hover:bg-[#d69c46bb] text-white text-lg">
+                        <button :disabled="form.processing" class=" float-right uppercase items-center hidden md:flex py-3 px-6 bg-[#ddc9cc] hover:bg-[#dbbdc2] text-black text-lg">
                             Send <i class="ml-2 fa fa-arrow-right"></i>
                         </button>
                     </div>
