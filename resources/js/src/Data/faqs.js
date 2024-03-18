@@ -1,43 +1,43 @@
 const faqs = [
   {
     id: 1,
-    query: "What makes Rhodes Coffee Co. unique?",
-    answer: "Rhodes Coffee Co. is more than just a coffee truck; it's a journey inspired by life's unexpected adventures. We're committed to serving thoughtfully sourced organic coffee and artisanal products, all while promoting positive change and a connection to nature.",
+    query: "What areas do you serve?",
+    answer: "We serve Oswego County and beyond. Our quotes include a mileage fee, the further you are from our location, the more costly our service will be. We are happy to travel.",
   },
   {
     id: 2,
-    query: "Where can I find Rhodes Coffee Co.?",
-    answer: "Keep an eye on our social media channels for updates on our location and upcoming events. Our mobile coffee truck travels to various spots, bringing our signature blends and cozy atmosphere wherever we go.",
+    query: "Where do you source your coffee?",
+    answer: "We source our organic, fair-trade coffee from Coastal Roasters in Tiverton, Rhode Island, a small café and roastery nestled on the shores of the Sakonnet River.",
   },
   {
     id: 3,
-    query: "Do you offer catering services?",
-    answer: "Yes, we do! Whether you're planning a corporate event, wedding, or private party, Rhodes Coffee Co. can cater to your needs. Contact us to discuss your event requirements and customize a menu that suits your tastes and preferences.",
+    query: "Do you sell bottled drinks? ",
+    answer: "Yes! In addition, our product offerings (up to 3!) we offer a bottled drink menu, a la carte. Bottled drinks are perfect for events, weddings, bridal showers, baby showers, etc. ",
   },
   {
     id: 4,
-    query: "What types of coffee do you serve?",
-    answer: "We offer a variety of specialty coffee drinks made from our carefully selected organic beans. From classic espresso-based beverages to refreshing iced options, there's something for every coffee lover.",
+    query: "Are all your products organic?",
+    answer: "Yes! High quality, organic products are the standard for our business. We serve organic, fair-trade coffee, syrups, ceremonial grade matcha, chai, lemonade, and teas. ",
   },
   {
     id: 5,
-    query: "Are your products environmentally friendly?",
-    answer: "Yes, we do! Whether you're planning a corporate event, wedding, or private party, Rhodes Coffee Co. can cater to your needs. Contact us to discuss your event requirements and customize a menu that suits your tastes and preferences.",
+    query: "Do you serve milk alternatives?",
+    answer: "We include oat milk and whole milk for all events. Almond milk is available upon request. Organic milk and alternatives are available for an additional cost.",
   },
   {
     id: 6,
-    query: "Can I purchase Rhodes Coffee Co. products online?",
-    answer: "While we primarily operate as a mobile coffee truck, we occasionally offer online sales for select merchandise and specialty items. Keep an eye on our website and social media for any announcements regarding online availability.",
+    query: "What’s included in your coffee cart menu?",
+    answer: "We offer a minimal menu that includes up to 3 cold drink combinations of your choice. Nitro cold brew, iced coffee, cold brew, lemonade, tea, etc. We include 3 organic syrups or sauces that can be customized and selected by the client. Matcha and Chai are premium products, available for an additional cost. Hot coffee is available for an additional cost. Decaf coffee is an upgraded option that must be paid for before the event. ",
   },
   {
     id: 7,
-    query: "Do you have options for non-coffee drinkers?",
-    answer: "Of course! In addition to our signature coffee drinks, we offer a selection of teas, hot chocolate, and other non-coffee beverages to cater to all preferences.",
+    query: "Do you have power requirements?",
+    answer: "It depends. If we are catering the event, there are no power requirements. However, if the event is sponsored, we do need one dedicated 15-amp circuit for our point-of-sale system (POS) and internet connection. ",
   },
   {
     id: 8,
-    query: "How can I get in touch with Rhodes Coffee Co. for inquiries or feedback?",
-    answer: "We love hearing from our customers! You can reach out to us through our website's contact form or directly message us on social media. Your feedback is invaluable in helping us improve and grow.",
+    query: "What if I need to cancel my event?",
+    answer: "We require a 50% deposit to reserve a date. Deposits are non-refundable but can be used towards another event.",
   }
 ];
 
