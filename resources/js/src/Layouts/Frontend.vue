@@ -8,7 +8,7 @@
             </Link>
             <div class="flex ms-auto md:order-2 space-x-3 md:space-x-0 gap-2 md:gap-8 items-center rtl:space-x-reverse">
                 <a target="_blank" href="https://www.instagram.com/rhodescoffeeco/"> <i class="fa-brands fa-instagram text-4xl" :class="scrollPosition > 100 ? 'text-black' : 'text-white'"></i> </a>
-                <Link href="/contact" class="uppercase hidden md:flex py-3 px-6 border-2 bg-[#f0dde0] hover:bg-[#ddc9cc] text-lg" :class="scrollPosition > 100 ? 'border-gray-800' : ''">
+                <Link href="/contact" class="uppercase hidden md:flex py-3 px-6 bg-[#d69c46] hover:bg-[#d69c46e3] text-lg" :class="scrollPosition > 100 ? 'border-gray-800' : ''">
                     Get Started
                 </Link>
                 <button type="button" @click.prevent="mobileMenuToggle" class="text-white items-center p-2 w-10 h-10 justify-center text-sm rounded-lg" :class="mobileMenuVisible ? 'inline-flex ' : 'md:hidden'">
@@ -49,14 +49,14 @@
     <!-- Lets get started -->
     <section class="bg-[#f0dde0] text-white text-center flex flex-col items-center gap-10 py-32 px-20">
         <h1 class="text-4xl md:text-6xl font-semibold text-gray-800">Let's get Started.</h1>
-        <WhiteBtnVue class="mx-auto mt-5" text="Contact Us" redirectTo="/contact"/>
+        <YellowBtn class="mx-auto mt-5" text="Contact Us" redirectTo="/contact"/>
     </section>
 
     <!-- Footer -->
-    <footer class="grid md:grid-cols-3 text-center md:text-left gap-10 py-24 px-20">
+    <footer class="grid md:grid-cols-3 text-center gap-10 py-24 px-20">
         <div class="flex flex-col gap-6">
             <h1 class="text-xl font-semibold">Stay in touch</h1>
-            <img src="../Imgs/sunlogo.png" alt="sun-logo" class="h-20 w-44" />
+            <img src="../Imgs/updated_logo.png" alt="sun-logo" class="h-24 w-40 mx-auto" />
             <p>hello@rhodescoffeeco.com</p>
             <p>(315) 430-5996</p>
             <p>4759 Salina St, Pulaski, NY 13142</p>
@@ -86,6 +86,7 @@
 import { onMounted, ref } from "vue";
 import { Link } from "@inertiajs/vue3";
 import WhiteBtnVue from '../Components/WhiteBtn.vue';
+import YellowBtn from "../Components/YellowBtn.vue";
 
 let mobileMenuVisible = ref(false);
 const mobileMenuToggle = () => {

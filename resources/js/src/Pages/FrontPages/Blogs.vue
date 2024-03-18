@@ -11,16 +11,17 @@
 
         <!-- Page Content -->
         <section class="px-5 md:px-20 py-12 md:py-32 grid md:grid-cols-3 gap-10 transition-all animate-fade">
-            <BlogCard :img="BlogOneImg" />
-            <BlogCard/>
-            <BlogCard/>
-        </section>
+            <BlogCard :img="BlogOneImg" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. A, at!" />
+            <BlogCard :img="BlogTwoImg" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. A, at!" />
+            <BlogCard :img="BlogThreeImg" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. A, at!" />
+        </section> 
     </AdminLayout>
 </template>
-
 
 <script setup>
 import AdminLayout from '../../Layouts/Frontend.vue';
 import BlogCard from '../../Components/BlogCard.vue';
-import BlogOneImg from '../../Imgs/started_img_n6.jpeg'
+import BlogOneImg from '../../Imgs/ins_gal17.jpeg'
+import BlogTwoImg from '../../Imgs/ins_gal10.jpeg'
+import BlogThreeImg from '../../Imgs/ins_gal1.jpeg'
 </script>

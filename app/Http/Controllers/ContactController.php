@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -38,7 +40,8 @@ class ContactController extends Controller
         
         try 
         {
-            Contact::create($validInputs);
+            $contact = Contact::create($validInputs);
+            Mail::to('jjaramillo34@gmail.com')->send(new ContactFormMail($contact));
             return back()->with('message', 'Thanks for contacting us.');
         }
         catch (\Throwable $th) {

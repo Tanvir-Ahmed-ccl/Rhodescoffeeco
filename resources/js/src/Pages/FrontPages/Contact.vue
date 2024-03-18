@@ -51,7 +51,7 @@
                     <div class="relative z-0">
                         <input type="text" id="full_name" v-model="form.name" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="full_name" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Full Name
+                            Name / Company
                         </label>
                         <p v-if="form.errors.name" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.name }}</p>
                     </div>
@@ -59,7 +59,7 @@
                     <div class="relative z-0">
                         <input type="text" id="email" v-model="form.email" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="email" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Email
+                            Email Address
                         </label>
                         <p v-if="form.errors.email" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.email }}</p>
                     </div>
@@ -67,15 +67,29 @@
                     <div class="relative z-0">
                         <input type="text" id="phone" v-model="form.phone" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="phone" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Phone
+                            Phone Number
                         </label>
                         <p v-if="form.errors.phone" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.phone }}</p>
+                    </div>
+
+                    <div>
+                        <select id="underline_select" v-model="form.type_of_event" class="block py-2.5 px-0 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                            <option value="type_of_event" selected>Type of Event</option>
+                            <option value="Wedding">Wedding</option>
+                            <option value="Corporate or Office Event">Corporate or Office Event</option>
+                            <option value="Non-Profit or School">Non-Profit or School</option>
+                            <option value="Conference or Expo">Conference or Expo</option>
+                            <option value=" Church Event"> Church Event</option>
+                            <option value="Retail Event">Retail Event</option>
+                            <option value="Baby or Bridal Shower">Baby or Bridal Shower</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
 
                     <div class="relative z-0 mt-5">
                         <input type="date" id="event_date" v-model="form.event_date" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="event_date" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Event Date
+                            Date of Event
                         </label>
                         <p v-if="form.errors.event_date" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.event_date }}</p>
                     </div>
@@ -83,31 +97,36 @@
                     <div class="relative z-0">
                         <input type="text" id="event_address" v-model="form.event_address" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="event_address" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Event Address
+                            Event Location - Venue & Address
                         </label>
                         <p v-if="form.errors.event_address" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.event_address }}</p>
                     </div>
 
                     <div class="relative z-0">
-                        <input type="text" id="subject" v-model="form.subject" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                        <label for="subject" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Subject
+                        <input type="text" id="event_address" v-model="form.event_address" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                        <label for="event_address" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
+                            No of Guests Expected
                         </label>
-                        <p v-if="form.errors.subject" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.subject }}</p>
+                        <p v-if="form.errors.event_address" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.event_address }}</p>
                     </div>
 
-                    <div class="relative z-0">
-                        <input type="text" id="general" v-model="form.general_question" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                        <label for="general" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            General questions or catering
-                        </label>
-                        <p v-if="form.errors.general_question" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.general_question }}</p>
+                    <div>
+                        <select id="underline_select" v-model="form.hear_us" class="block py-2.5 px-0 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                            <option value="hear_us" selected>How did you hear about us?</option>
+                            <option value="Google Search"> Google Search</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Friends or Family">Friends or Family</option>
+                            <option value="Venue/Event Planner">Venue/Event Planner</option>
+                            <option value="We’re a Repeat Client">We’re a Repeat Client</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
 
                     <div class="relative z-0">
                         <textarea id="message" v-model="form.message" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="" ></textarea>
                         <label for="message" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Message
+                           Tell us more about your event
                         </label>
                         <p v-if="form.errors.message" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.message }}</p>
                     </div>
@@ -142,5 +161,7 @@ const form = useForm({
   subject: null,
   message: null,
   general_question: null,
+  hear_us: 'hear_us',
+  type_of_event: 'type_of_event',
 })
 </script>
