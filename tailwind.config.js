@@ -4,8 +4,8 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
-    'node_modules/flowbite-vue/**/*.js',
-    'node_modules/flowbite/**/*.js'
+    './node_modules/flowbite-vue/**/*.js',
+    './node_modules/flowbite/**/*.js'
   ],
   theme: {
     extend: {

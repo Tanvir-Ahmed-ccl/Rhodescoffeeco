@@ -59,8 +59,9 @@
             <ul class="flex flex-col gap-5">
                 <li class="font-semibold text-xl">Menu</li>
                 <li><Link href="/our-story" class="underline" >Our Story</Link></li>
-                <li><Link href="" class="underline">Services</Link></li>
-                <li><Link href="" class="underline">Gallery</Link></li>
+                <li><Link href="/faqs" class="underline">FAQ</Link></li>
+                <li><a href="/imgs/menu.pdf" target="_blank" class="underline">Explore Menu</a></li>
+                <li><Link href="/contact" class="underline">Contact</Link></li>
             </ul>
         </div>
     </footer>

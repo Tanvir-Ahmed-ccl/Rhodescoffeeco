@@ -42,17 +42,6 @@
 
         <!-- Testimonial -->
         <TestimonialVue/>
-        
-
-        <!-- Newsletter -->
-        <section class="bg-[#E7D1B5] text-gray-900 flex flex-col text-center items-center gap-10 py-32 px-5 md:px-20">
-            <h1 class="text-4xl md:text-6xl">Subscribe to our newsletter.</h1>
-            <p class="text-lg">Sign up with your email address to receive news and updates.</p>
-            <div class="flex flex-col md:flex-row gap-5">
-                <input type="text" class="p-5 border-0" placeholder="Enter your email address ...">
-                <YellowBtn text="Signup"/>
-            </div>
-        </section>
 
         <!-- FAQ -->
         <section class=" flex flex-col items-center text-center gap-10 py-32 px-20"
@@ -110,6 +99,18 @@
             </div>
         </section>
 
+        <fwb-modal v-if="isShowModal" @close="closeModal" size="5xl">
+            <template #body>
+                <section class="bg-[#E7D1B5] text-gray-900 flex flex-col text-center items-center gap-10 py-32 px-5 md:px-20">
+                    <h1 class="text-4xl md:text-6xl">Subscribe to our newsletter.</h1>
+                    <p class="text-lg">Sign up with your phone number to receive news and updates.</p>
+                    <div class="flex flex-col md:flex-row gap-5">
+                        <input type="text" class="p-5 border-0" placeholder="Enter your phone number ...">
+                        <YellowBtn text="Subscribe"/>
+                    </div>
+                </section>
+            </template>
+        </fwb-modal>
     </AdminLayout>
 </template>
 
@@ -117,4 +118,15 @@
 import YellowBtn from '../../Components/YellowBtn.vue';
 import TestimonialVue from '../../Components/Testimonial.vue';
 import AdminLayout from '../../Layouts/Frontend.vue';
+import { ref } from 'vue'
+import { FwbButton, FwbModal } from 'flowbite-vue'
+
+const isShowModal = ref(true)
+
+function closeModal () {
+  isShowModal.value = false
+}
+function showModal () {
+  isShowModal.value = true
+}
 </script>
