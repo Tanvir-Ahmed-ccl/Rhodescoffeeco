@@ -64,7 +64,8 @@
         <div class="flex flex-col gap-7">
             <h1 class="text-xl font-semibold">Questions?</h1>
             <a href="/">Contact Us</a>
-            <a href="https://www.instagram.com/rhodescoffeeco/"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+            <a href="https://www.instagram.com/rhodescoffeeco"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+            <a href="https://www.facebook.com/profile.php?id=100091245697148"> <i class="fa-brands fa-facebook text-3xl"></i> </a>
         </div>
         <div class="">
             <ul class="flex flex-col gap-5">
