@@ -56,7 +56,7 @@
     <footer class="grid md:grid-cols-3 text-center gap-10 py-24 px-20">
         <div class="flex flex-col gap-6">
             <h1 class="text-xl font-semibold">Stay in touch</h1>
-            <img src="../Imgs/updated_logo.png" alt="sun-logo" class="h-24 w-40 mx-auto" />
+            <img src="../Imgs/updated_logo.png" alt="sun-logo" class="h-28 w-40 mx-auto" />
             <p>hello@rhodescoffeeco.com</p>
             <p>(315) 430-5996</p>
             <p>4759 Salina St, Pulaski, NY 13142</p>
@@ -64,7 +64,8 @@
         <div class="flex flex-col gap-7">
             <h1 class="text-xl font-semibold">Questions?</h1>
             <a href="/">Contact Us</a>
-            <a href="https://www.instagram.com/rhodescoffeeco/"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+            <a href="https://www.instagram.com/rhodescoffeeco"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+            <a href="https://www.facebook.com/profile.php?id=100091245697148"> <i class="fa-brands fa-facebook text-3xl"></i> </a>
         </div>
         <div class="">
             <ul class="flex flex-col gap-5">
