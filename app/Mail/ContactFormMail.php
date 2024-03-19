@@ -33,7 +33,7 @@ class ContactFormMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Someone trying to touch you.',
+            subject: 'Someone request an event quote.',
         );
     }
 

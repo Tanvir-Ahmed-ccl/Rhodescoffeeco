@@ -14,10 +14,12 @@
 
             <div>
                 <h1 class="text-3xl md:text-5xl font-semibold">Who Am I</h1>
-                <h4 class="mt-24 text-xl md:text-2xl">Hi there! I’m Tricia - a mama, a veteran, and the proud owner of Rhodes Coffee Company. </h4>
+                <h4 class="md:mt-24 text-xl md:leading-10">
+                    Welcome! I'm Tricia, a dedicated mom, a proud veteran, and the passionate founder of Rhodes Coffee Company. My journey has been shaped by my roles as a caregiver and a service member, teaching me the importance of community, discipline, and love. These values are the foundation of Rhodes Coffee Company, where we're more than just a coffee shop. We're a community gathering spot where each cup of coffee connects people and stories. Our mission is to offer not just exceptional coffee but a welcoming space where everyone feels at home. Step into Rhodes Coffee Company and discover not just a drink, but an experience. Welcome to our family, where every sip comes with warmth and pride.
+                </h4>
             </div>
             <div>
-                <img src="../../Imgs/pics/picture_of_me.jpg" alt="picture of me" class="h-96 me-auto"/>
+                <img src="../../Imgs/pics/picture_of_me.jpg" alt="picture of me" class="me-auto"/>
             </div>
 
             <div>
