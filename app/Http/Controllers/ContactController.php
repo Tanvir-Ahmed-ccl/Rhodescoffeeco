@@ -41,7 +41,7 @@ class ContactController extends Controller
         try 
         {
             $contact = Contact::create($validInputs);
-            Mail::to('jjaramillo34@gmail.com')->send(new ContactFormMail($contact));
+            Mail::to(env('MAIL_TO_ADDRESS'))->send(new ContactFormMail($contact));
             return back()->with('message', 'Thanks for contacting us.');
         }
         catch (\Throwable $th) {

@@ -41,6 +41,7 @@
                     </p>
                 </div>
             </div>
+
             <div class="p-5 md:pl-32">
                 <h3 class="text-2xl font-semibold ">Request an Event Quote</h3>
 
@@ -49,7 +50,7 @@
                 
                 <form class="flex flex-col gap-5 mt-10" @submit.prevent="form.post('/contact', {onSuccess: () => form.reset()})">
                     <div class="relative z-0">
-                        <input type="text" id="full_name" v-model="form.name" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                        <input type="text" id="full_name" required v-model="form.name" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="full_name" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
                             Name / Company
                         </label>
@@ -57,7 +58,7 @@
                     </div>
 
                     <div class="relative z-0">
-                        <input type="text" id="email" v-model="form.email" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                        <input type="text" id="email" required v-model="form.email" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                         <label for="email" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
                             Email Address
                         </label>
@@ -103,11 +104,11 @@
                     </div>
 
                     <div class="relative z-0">
-                        <input type="text" id="event_address" v-model="form.event_address" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                        <label for="event_address" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
+                        <input type="text" id="no_of_guest" v-model="form.no_of_guest" class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                        <label for="no_of_guest" class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
                             No of Guests Expected
                         </label>
-                        <p v-if="form.errors.event_address" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.event_address }}</p>
+                        <p v-if="form.errors.no_of_guest" class="mt-2 text-sm text-red-600 dark:text-red-500">{{ form.errors.no_of_guest }}</p>
                     </div>
 
                     <div>
@@ -133,7 +134,7 @@
 
                     <div class="mt-3">
                         <button :disabled="form.processing" class=" float-right uppercase items-center hidden md:flex py-3 px-6 bg-[#ddc9cc] hover:bg-[#dbbdc2] text-black text-lg">
-                            Send <i class="ml-2 fa fa-arrow-right"></i>
+                            <span v-if="form.processing">Processing ...</span> <span v-else>Send</span> <i class="ml-2 fa fa-arrow-right"></i>
                         </button>
                     </div>
                 </form>
@@ -158,9 +159,7 @@ const form = useForm({
   phone: null,
   event_date: null,
   event_address: null,
-  subject: null,
   message: null,
-  general_question: null,
   hear_us: 'hear_us',
   type_of_event: 'type_of_event',
 })

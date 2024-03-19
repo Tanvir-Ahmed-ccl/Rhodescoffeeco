@@ -10,7 +10,7 @@
             </div>
         </section>
 
-        <!-- Service -->
+        <!-- Ocasion -->
         <section class="bg-[#f0dde0] flex flex-col gap-10 py-32 px-5 md:px-20">
             <div class="text-center transition-all animate-fade">
                 <h1 class="text-4xl md:text-6xl">Catering for all ocasions</h1>
@@ -30,8 +30,26 @@
             </div>
         </section>
 
+        
         <!-- Mission -->
-        <section class="bg-[#f0dde0]">
+        <section style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imgs/started_img_n3.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+            <div class="text-center flex flex-col py-32 px-5 md:px-20" >
+                <div class="flex gap-7 mx-auto text-[#c8d6ca]">
+                    <h1 class="text-4xl md:text-6xl "> Our Mission </h1>
+                </div>
+                
+                <p class="text-gray-200 px-5 md:px-24 lg:px-48 mt-14 text-lg md:text-2xl">
+                    <p class="mb-5">Tricia Hax - CEO - Owner</p>
+
+                    <i class="fa fa-quote-left text-3xl"></i>  
+                    Inspired by the road [Rhode] - the unexpected places life takes us, the people we meet, and ultimately - the place we call home - Rhodes Coffee Co. is an homage to our roots. Rooted in the belief that life is best lived authentically and organically - and as close to nature as possible. Rhodes Coffee Co. strives to be a catalyst for positive change with thoughtfully sourced organic coffee & ingredients + small batch, artisanal products at an affordable price
+                    <i class="fa fa-quote-right text-3xl"></i>
+                </p>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="bg-[#C8D5CA]">
             <div class="text-center py-16 px-5 md:px-52" >
                 <div class="flex flex-col gap-7 mx-auto">
                     <h1 class="text-4xl md:text-6xl "> Our Services </h1>
@@ -54,19 +72,6 @@
             </div>
         </section>
 
-        <!-- Mission -->
-        <section style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imgs/started_img_n3.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="text-center flex flex-col py-32 px-5 md:px-20" >
-                <div class="flex gap-7 mx-auto text-[#c8d6ca]">
-                    <h1 class="text-4xl md:text-6xl "> Our Mission </h1>
-                </div>
-                <p class="text-gray-200 px-5 md:px-24 lg:px-48 mt-14 text-lg md:text-2xl">
-                    <i class="fa fa-quote-left text-3xl"></i>  
-                    Inspired by the road [Rhode] - the unexpected places life takes us, the people we meet, and ultimately - the place we call home - Rhodes Coffee Co. is an homage to our roots. Rooted in the belief that life is best lived authentically and organically - and as close to nature as possible. Rhodes Coffee Co. strives to be a catalyst for positive change with thoughtfully sourced organic coffee & ingredients + small batch, artisanal products at an affordable price
-                    <i class="fa fa-quote-right text-3xl"></i>
-                </p>
-            </div>
-        </section>
 
         <!-- Testimonial -->
         <TestimonialVue/>
