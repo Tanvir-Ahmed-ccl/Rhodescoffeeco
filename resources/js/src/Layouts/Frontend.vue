@@ -54,9 +54,9 @@
 
     <!-- Footer -->
     <footer class="grid md:grid-cols-3 text-center gap-10 py-24 px-20">
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col">
             <h1 class="text-xl font-semibold">Stay in touch</h1>
-            <img src="../Imgs/updated_logo.png" alt="sun-logo" class="h-28 w-40 mx-auto" />
+            <img src="../Imgs/updated_logo.png" alt="sun-logo" class="h-40 w-40 mx-auto" />
             <p>hello@rhodescoffeeco.com</p>
             <p>(315) 430-5996</p>
             <p>4759 Salina St, Pulaski, NY 13142</p>
