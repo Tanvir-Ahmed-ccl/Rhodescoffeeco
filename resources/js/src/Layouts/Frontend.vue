@@ -48,7 +48,7 @@
 
     <!-- Lets get started -->
     <section class="bg-[#f0dde0] text-white text-center flex flex-col items-center gap-10 py-32 px-20">
-        <h1 class="text-4xl md:text-6xl font-semibold text-gray-800">Let's get Started.</h1>
+        <h1 class="text-4xl md:text-6xl font-semibold text-gray-800">Let's Get Started.</h1>
         <YellowBtn class="mx-auto mt-5" text="Contact Us" redirectTo="/contact"/>
     </section>
 
