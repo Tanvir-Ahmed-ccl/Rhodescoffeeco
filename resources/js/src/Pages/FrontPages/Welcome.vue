@@ -18,22 +18,27 @@
             </div>
             <div class="grid md:grid-cols-2 gap-10 transition-all animate-fade">
                 <div>
-                    <img src="../../Imgs/history2.jpg" alt="service 1" class="w-auto" />
+                    <img src="../../Imgs/grid_gal7_sq.jpeg" alt="coffee cup" class="w-auto" />
                 </div>
                 <div class="text-center md:text-left basis-3/6">
-                    <h6 class="text-lg md:text-2xl mb-4">At Rhodes Coffee Co., we're more than just a coffee truck -
+                    <h6 class="text-lg md:text-2xl mb-4">
+                        At Rhodes Coffee Co., we're more than just a coffee truck -
                         we're purveyors of exceptional experiences. Our services extend beyond serving delicious,
                         thoughtfully sourced organic coffee and artisanal products. We specialize in crafting moments
-                        that elevate your event or gathering.</h6>
-                    <h6 class="text-lg md:text-2xl mb-4">Additionally, we offer catering services tailored to your
-                        needs. Impress your guests with our carefully curated menu featuring a selection of our finest
-                        brews and delectable treats. Let Rhodes Coffee Co. elevate your next event with our passion for
-                        quality, authenticity, and sustainability.</h6>
-                    <!-- <h6 class="text-lg md:text-2xl mb-16">From intimate gatherings to bustling festivals, our mobile
+                        that elevate your event or gathering.
+                    </h6>
+                    <h6 class="text-lg md:text-2xl mb-4">
+                        With our newest addition, we're thrilled to provide coffee cart catering using a stylish, highly
+                        mobile drink cart that radiates aesthetic charm and adds a touch of sophistication to any
+                        occasion. Ideal for private events, corporate events, catering, etc - just visit our contact
+                        page, provide event specifics, and request a quote.
+                    </h6>
+                    <p class="my-10" </p>
+                        <!-- <h6 class="text-lg md:text-2xl mb-16">From intimate gatherings to bustling festivals, our mobile
                         coffee truck brings the perfect blend of flavor and ambiance to any occasion. Whether you're
                         seeking a caffeine boost or a cozy atmosphere, our team is dedicated to delivering top-notch
                         service and hospitality.</h6> -->
-                    <YellowBtn class="mx-auto" text="Contact Us" redirectTo="/contact" />
+                        <YellowBtn class="mx-auto" text="Contact Us" redirectTo="/contact" />
                 </div>
             </div>
         </section>
@@ -71,18 +76,25 @@
                         sophistication to any occasion. Ideal for private events, corporate events, catering, etc - just
                         visit our contact page, provide event specifics, and request a quote.</p>
                 </div>
-                <div class="flex items-center justify-center gap-36 mt-28">
+                <div class="flex items-end justify-center gap-36 mt-28">
                     <div class="flex flex-col gap-5">
                         <img src="../../Imgs/choose_icon1.png" class="w-28" />
+                        <!-- <p class="text-8xl text-[#d69c46]"> <i class="fa-brands fa-pagelines"></i> </p> -->
                         <p class="text-lg font-semibold">Organic</p>
                     </div>
                     <div class="flex flex-col gap-5">
-                        <img src="../../Imgs/choose_icon2.png" class="w-28" />
-                        <p class="text-lg font-semibold">Cart</p>
+                        <!-- <img src="../../Imgs/choose_icon2.png" class="w-28" /> -->
+                        <p class="text-8xl text-[#c19977] font-light"> <i class="far fa-map"></i> </p>
+                        <p class="text-lg font-semibold">Local</p>
                     </div>
                     <div class="flex flex-col gap-5">
-                        <img src="../../Imgs/contact_icon1.png" class="w-28" />
-                        <p class="text-lg font-semibold">Location</p>
+                        <img src="../../Imgs/parallax_icon2.png" class="w-20" />
+                        <p class="text-lg font-semibold">Ethical</p>
+                    </div>
+
+                    <div class="flex flex-col gap-5">
+                        <p class="text-8xl text-[#c19977] font-light"> <i class="fa fa-people-group"></i> </p>
+                        <p class="text-lg font-semibold">Comunity centered</p>
                     </div>
                 </div>
             </div>
@@ -100,43 +112,32 @@
         </section>
 
         <!-- Gallery -->
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 py-20 px-5 md:px-20">
+        <section class="grid grid-cols-2 md:grid-cols-3 gap-4 py-20 px-5 md:px-20">
             <div class="grid gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal1.1.jpeg" alt="gallery 1">
+                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal7.jpeg" alt="gallery 3">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs//grid_gal1.2.jpeg" alt="gallery 2">
+                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal13.jpeg" alt="gallery 5">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs//grid_gal1.jpeg" alt="gallery 3">
+                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal17.jpeg" alt="g10">
                 </div>
             </div>
             <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal10.jpeg" alt="gallery 4">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal11.jpeg" alt="gallery 5">
-                </div>
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal12.jpeg" alt="g 6">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal13.jpeg" alt="g7">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal14.jpeg" alt="g8">
                 </div>
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal16.jpeg" alt="g9">
                 </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal6.jpeg" alt="g10">
+                </div>
             </div>
             <div class="grid gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal17.jpeg" alt="g10">
+                    <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal21.jpeg" alt="g11">
                 </div>
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal18.jpeg" alt="g11">
@@ -158,7 +159,7 @@
                             <input type="text" v-model="form.phone" class="p-5 border-2 border-[#f0dde0]"
                                 placeholder="Enter your phone number">
                             <button :disabled="form.processing"
-                                class=" float-right uppercase items-center hidden md:flex py-3 px-6 bg-[#ddc9cc] hover:bg-[#dbbdc2] text-black text-lg">
+                                class=" float-right uppercase items-center hidden md:flex py-3 px-6 bg-[#d69c46] hover:bg-[#b48032] text-black text-lg">
                                 Subscribe
                             </button>
                         </div>

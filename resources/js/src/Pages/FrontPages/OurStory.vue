@@ -14,7 +14,7 @@
             <div class="col-span-2 flex gap-20">
                 <div>
                     <h1 class="text-3xl md:text-5xl font-semibold">Who Am I:</h1>
-                    <h4 class="md:mt-24 text-xl md:leading-10">
+                    <h4 class="mt-5 text-xl md:leading-10">
                         Welcome! I'm Tricia, a dedicated mom, a proud veteran, and the passionate founder of Rhodes
                         Coffee Company. My journey has been shaped by my roles as a caregiver and a service member,
                         teaching me the importance of community, discipline, and love. These values are the foundation
