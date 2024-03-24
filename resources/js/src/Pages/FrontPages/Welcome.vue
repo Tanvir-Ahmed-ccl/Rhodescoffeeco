@@ -54,7 +54,7 @@
 
                 <div class="text-gray-200 px-5 text-center md:px-24 lg:px-48 mt-14 ">
                     <i class="fa fa-quote-left text-5xl"></i>
-                    <p>
+                    <p class="text-lg">
                         Inspired by the road [Rhode] - the unexpected places life takes us, the people we meet, and
                         ultimately -
                         the place we call home - Rhodes Coffee Co. is an homage to our roots. Rooted in the belief that
@@ -101,22 +101,22 @@
                 <div class="flex items-end justify-center gap-36 mt-28">
                     <div class="flex flex-col gap-5">
                         <!-- <img src="../../Imgs/choose_icon1.png" class="w-28" /> -->
-                        <p class="text-8xl text-[#c19977]"> <i class="fa-brands fa-pagelines"></i> </p>
+                        <p class="text-8xl text-[#EA9Fb3]"> <i class="fa-brands fa-pagelines"></i> </p>
                         <p class="text-lg font-semibold">Organic</p>
                     </div>
                     <div class="flex flex-col gap-5">
                         <!-- <img src="../../Imgs/choose_icon2.png" class="w-28" /> -->
-                        <p class="text-8xl text-[#c19977] font-light"> <i class="far fa-map"></i> </p>
+                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="fa fa-map-location-dot"></i> </p>
                         <p class="text-lg font-semibold">Local</p>
                     </div>
                     <div class="flex flex-col gap-5">
                         <!-- <img src="../../Imgs/parallax_icon2.png" class="w-20" /> -->
-                        <p class="text-8xl text-[#c19977] font-light"> <i class="far fa-handshake"></i> </p>
+                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="far fa-handshake"></i> </p>
                         <p class="text-lg font-semibold">Ethical</p>
                     </div>
 
                     <div class="flex flex-col gap-5">
-                        <p class="text-8xl text-[#c19977] font-light"> <i class="fa fa-people-group"></i> </p>
+                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="fa fa-people-group"></i> </p>
                         <p class="text-lg font-semibold">Comunity centered</p>
                     </div>
                 </div>
