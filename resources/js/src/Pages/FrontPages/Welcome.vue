@@ -52,48 +52,71 @@
                     <h1 class="text-4xl md:text-6xl "> Our Mission </h1>
                 </div>
 
-                <p class="text-gray-200 px-5 md:px-24 lg:px-48 mt-14 text-lg md:text-2xl">
-                <p class="mb-5">Tricia Hax, Owner</p>
-
-                <i class="fa fa-quote-left text-3xl"></i>
-                Inspired by the road [Rhode] - the unexpected places life takes us, the people we meet, and ultimately -
-                the place we call home - Rhodes Coffee Co. is an homage to our roots. Rooted in the belief that life is
-                best lived authentically and organically - and as close to nature as possible. Rhodes Coffee Co. strives
-                to be a catalyst for positive change with thoughtfully sourced organic coffee & ingredients + small
-                batch, artisanal products at an affordable price
-                <i class="fa fa-quote-right text-3xl"></i>
-                </p>
+                <div class="text-gray-200 px-5 text-center md:px-24 lg:px-48 mt-14 ">
+                    <i class="fa fa-quote-left text-5xl"></i>
+                    <p class="text-lg">
+                        Inspired by the road [Rhode] - the unexpected places life takes us, the people we meet, and
+                        ultimately -
+                        the place we call home - Rhodes Coffee Co. is an homage to our roots. Rooted in the belief that
+                        life
+                        is
+                        best lived authentically and organically - and as close to nature as possible. Rhodes Coffee Co.
+                        strives
+                        to be a catalyst for positive change with thoughtfully sourced organic coffee & ingredients +
+                        small
+                        batch, artisanal products at an affordable price
+                    </p>
+                    <i class="fa fa-quote-right text-5xl"></i>
+                    <p class="mb-5 text-lg">Tricia Hax, Owner</p>
+                </div>
             </div>
         </section>
 
-        <!-- Services -->
+        <!-- Commitment -->
         <section class="bg-[#C8D5CA]">
             <div class="text-center py-16 px-5 md:px-52">
                 <div class="flex flex-col gap-7 mx-auto">
                     <h1 class="text-4xl md:text-6xl "> Our Commitment </h1>
-                    <p class="text-2xl">With our newest addition, we're thrilled to provide coffee cart catering using a
-                        stylish, highly mobile drink cart that radiates aesthetic charm and adds a touch of
-                        sophistication to any occasion. Ideal for private events, corporate events, catering, etc - just
-                        visit our contact page, provide event specifics, and request a quote.</p>
+                    <p class="text-[1rem]">
+                        At Rhodes Coffee Co, we are more than just purveyors of delicious coffee and
+                        delectable treats; we are stewards of ethical consumption and guardians of community well-being.
+                        With a firm commitment to sustainability, social responsibility, and environmental stewardship,
+                        we strive to serve not just exceptional food and beverages, but also uphold a moral and ethical
+                        obligation to our community.
+                    </p>
+                    <p class="text-[1rem]">
+                        Every cup of coffee, every pastry, and every ingredient we source is a reflection of our values.
+                        We believe in the power of organic farming practices to preserve the earth's delicate ecosystems
+                        and protect the health of both farmers and consumers alike. That's why we partner with certified
+                        organic suppliers who share our dedication to sustainable agriculture and ethical labor
+                        practices.
+                    </p>
+                    <p class="text-[1rem]">
+                        When you choose to support our café, you're not just enjoying a cup of coffee or a pastry –
+                        you're joining us in our mission to make a positive impact on the world around us. Together, we
+                        can create a brighter future for generations to come, one mindful sip and one thoughtful bite at
+                        a time. Thank you for your support in our journey toward a more ethical and sustainable future.
+                    </p>
                 </div>
                 <div class="flex items-end justify-center gap-36 mt-28">
                     <div class="flex flex-col gap-5">
-                        <img src="../../Imgs/choose_icon1.png" class="w-28" />
-                        <!-- <p class="text-8xl text-[#d69c46]"> <i class="fa-brands fa-pagelines"></i> </p> -->
+                        <!-- <img src="../../Imgs/choose_icon1.png" class="w-28" /> -->
+                        <p class="text-8xl text-[#EA9Fb3]"> <i class="fa-brands fa-pagelines"></i> </p>
                         <p class="text-lg font-semibold">Organic</p>
                     </div>
                     <div class="flex flex-col gap-5">
                         <!-- <img src="../../Imgs/choose_icon2.png" class="w-28" /> -->
-                        <p class="text-8xl text-[#c19977] font-light"> <i class="far fa-map"></i> </p>
+                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="fa fa-map-location-dot"></i> </p>
                         <p class="text-lg font-semibold">Local</p>
                     </div>
                     <div class="flex flex-col gap-5">
-                        <img src="../../Imgs/parallax_icon2.png" class="w-20" />
+                        <!-- <img src="../../Imgs/parallax_icon2.png" class="w-20" /> -->
+                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="far fa-handshake"></i> </p>
                         <p class="text-lg font-semibold">Ethical</p>
                     </div>
 
                     <div class="flex flex-col gap-5">
-                        <p class="text-8xl text-[#c19977] font-light"> <i class="fa fa-people-group"></i> </p>
+                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="fa fa-people-group"></i> </p>
                         <p class="text-lg font-semibold">Comunity centered</p>
                     </div>
                 </div>
@@ -150,7 +173,7 @@
 
         <fwb-modal v-if="isShowModal" @close="closeModal" size="2xl">
             <template #body>
-                <form @submit.prevent="form.post('/subscribe', {onSuccess: () => closeModal('subscriber'),})">
+                <form @submit.prevent="form.post('/subscribe', { onSuccess: () => closeModal('subscriber'), })">
                     <section class=" text-gray-900 flex flex-col text-center items-center gap-10 py-20 px-5 md:px-16">
                         <img src="../../Imgs/logo.png" alt="logo" class="h-24 w-52" />
                         <p class="text-lg">Subscribe to receive a coupon code form 10% off your first order! for
@@ -164,9 +187,9 @@
                             </button>
                         </div>
                         <p v-if="form.errors.phone" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                            form.errors.phone }}</p>
+            form.errors.phone }}</p>
                         <fwb-alert closable icon border type="success" v-if="$page.props.flash.message">{{
-                            $page.props.flash.message }}</fwb-alert>
+            $page.props.flash.message }}</fwb-alert>
                         <fwb-alert closable icon border type="danger" v-if="$page.props.flash.exception">{{
                             $page.props.flash.exception }}</fwb-alert>
                     </section>
@@ -181,24 +204,24 @@ import YellowBtn from '../../Components/YellowBtn.vue';
 import TestimonialVue from '../../Components/Testimonial.vue';
 import AdminLayout from '../../Layouts/Frontend.vue';
 import { ref } from 'vue'
-import { FwbModal,FwbAlert } from 'flowbite-vue'
+import { FwbModal, FwbAlert } from 'flowbite-vue'
 import WhiteBtnVue from '../../Components/WhiteBtn.vue';
 import { useForm } from '@inertiajs/vue3'
 
 const isShowModal = ref(false);
 
 const form = useForm({
-  phone: null,
+    phone: null,
 })
 
-function closeModal (type = 'cancel') {
-  isShowModal.value = false;
-  localStorage.setItem('subscribe', type);
+function closeModal(type = 'cancel') {
+    isShowModal.value = false;
+    localStorage.setItem('subscribe', type);
 }
 
-function showModal () {
+function showModal() {
     const modal = localStorage.getItem('subscribe');
-    if(modal == null){
+    if (modal == null) {
         isShowModal.value = true
     }
 }

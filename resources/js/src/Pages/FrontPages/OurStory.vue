@@ -68,7 +68,7 @@
             <div
                 class="text-gray-800 text-lg lg:text-xl lg:leading-8 flex flex-col lg:flex-row mt-20 items-center gap-20">
                 <div class="flex flex-col">
-                    <h1 class="text-3xl lg:text-5xl font-semibold">Rhodes Coffee Co. Cart</h1>
+                    <h1 class="text-3xl lg:text-5xl font-semibold">Rhodes Coffee Co. Cart:</h1>
                     <h5 class="mt-10 text-lg lg:text-xl lg:leading-8 leading-8">
                         With our most recent addition, we're delighted to offer coffee cart catering using a chic,
                         highly
