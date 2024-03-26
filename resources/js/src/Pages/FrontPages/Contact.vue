@@ -9,7 +9,7 @@
         </section>
 
         <!-- Page Content -->
-        <section class="grid md:grid-cols-2 gap-10 px-5 md:px-20 py-12 md:py-32 transition-all animate-fade">
+        <section class="grid lg:grid-cols-2 gap-10 px-5 md:px-20 py-12 md:py-32 transition-all animate-fade">
             <div class="flex flex-col gap-5">
                 <h5 class="text-gray-700 text-lg md:text-4xl font-semibold">Get in Touch with Rhodes Coffee Co.</h5>
                 <p>Whether you have a question, feedback, or want to inquire about our catering services, we're here to
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="p-5 md:pl-32">
+            <div class="lg:pl-32">
                 <h3 class="text-2xl font-semibold ">Request an Event Quote</h3>
 
                 <fwb-alert closable icon border type="success" v-if="$page.props.flash.message">{{
@@ -45,7 +45,7 @@
                     $page.props.flash.exception }}</fwb-alert>
 
                 <form class="flex flex-col gap-5 mt-10"
-                    @submit.prevent="form.post('/contact', {onSuccess: () => form.reset()})">
+                    @submit.prevent="form.post('/contact', { onSuccess: () => form.reset() })">
                     <div class="relative z-0">
                         <input type="text" id="full_name" required v-model="form.name"
                             class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -55,7 +55,7 @@
                             Name / Company
                         </label>
                         <p v-if="form.errors.name" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                            form.errors.name }}</p>
+                    form.errors.name }}</p>
                     </div>
 
                     <div class="relative z-0">
@@ -67,7 +67,7 @@
                             Email Address
                         </label>
                         <p v-if="form.errors.email" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                            form.errors.email }}</p>
+                    form.errors.email }}</p>
                     </div>
 
                     <div class="relative z-0">
@@ -79,13 +79,13 @@
                             Phone Number
                         </label>
                         <p v-if="form.errors.phone" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                            form.errors.phone }}</p>
+                    form.errors.phone }}</p>
                     </div>
 
                     <div>
                         <select id="underline_select" v-model="form.type_of_event"
                             class="block py-2.5 px-0 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option value="type_of_event" selected>Type of Event</option>
+                            <option value="type_of_event" selected disabled> Type of Event</option>
                             <option value="Wedding">Wedding</option>
                             <option value="Corporate or Office Event">Corporate or Office Event</option>
                             <option value="Non-Profit or School">Non-Profit or School</option>
@@ -106,7 +106,7 @@
                             Date of Event
                         </label>
                         <p v-if="form.errors.event_date" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                            form.errors.event_date }}</p>
+                    form.errors.event_date }}</p>
                     </div>
 
                     <div class="relative z-0">
@@ -118,7 +118,7 @@
                             Event Location - Venue & Address
                         </label>
                         <p v-if="form.errors.event_address" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                            form.errors.event_address }}</p>
+                    form.errors.event_address }}</p>
                     </div>
 
                     <div class="relative z-0">
@@ -130,13 +130,13 @@
                             No of Guests Expected
                         </label>
                         <p v-if="form.errors.no_of_guest" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                            form.errors.no_of_guest }}</p>
+                    form.errors.no_of_guest }}</p>
                     </div>
 
                     <div>
                         <select id="underline_select" v-model="form.hear_us"
                             class="block py-2.5 px-0 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option value="hear_us" selected>How did you hear about us?</option>
+                            <option value="hear_us" selected disabled> How did you hear about us?</option>
                             <option value="Google Search"> Google Search</option>
                             <option value="Instagram">Instagram</option>
                             <option value="Facebook">Facebook</option>
@@ -156,12 +156,12 @@
                             Tell us more about your event
                         </label>
                         <p v-if="form.errors.message" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                            form.errors.message }}</p>
+                    form.errors.message }}</p>
                     </div>
 
                     <div class="mt-3">
                         <button :disabled="form.processing"
-                            class=" float-right uppercase items-center hidden md:flex py-3 px-6 bg-[#ddc9cc] hover:bg-[#dbbdc2] text-black text-lg">
+                            class="lg:float-right uppercase items-center block w-full lg:w-auto lg:flex py-3 px-6 bg-[#ddc9cc] hover:bg-[#dbbdc2] text-black text-lg">
                             <span v-if="form.processing">Processing ...</span> <span v-else>Send</span> <i
                                 class="ml-2 fa fa-arrow-right"></i>
                         </button>
@@ -186,13 +186,14 @@ import { useForm } from '@inertiajs/vue3'
 import { FwbAlert } from 'flowbite-vue'
 
 const form = useForm({
-  name: null,
-  email: null,
-  phone: null,
-  event_date: null,
-  event_address: null,
-  message: null,
-  hear_us: 'hear_us',
-  type_of_event: 'type_of_event',
+    name: '',
+    email: '',
+    phone: '',
+    type_of_event: 'type_of_event',
+    event_date: '',
+    event_address: '',
+    no_of_guest: '',
+    message: '',
+    hear_us: 'hear_us',
 })
 </script>

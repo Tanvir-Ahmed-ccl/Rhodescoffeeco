@@ -10,17 +10,17 @@
         </section>
 
         <!-- Ocasion -->
-        <section class="bg-[#f0dde0] flex flex-col gap-10 py-32 px-5 md:px-20">
+        <section class="bg-[#f0dde0] flex flex-col gap-10 py-32 px-5 lg:px-20">
             <div class="text-center transition-all animate-fade">
                 <h1 class="text-4xl md:text-6xl">Catering for All Occasions</h1>
                 <div class="border border-y-2 rounded-lg border-yellow-600 w-32 my-5 mx-auto"></div>
                 <!-- <h5 class="mt-12s text-2xl">But not limited to</h5> -->
             </div>
-            <div class="grid md:grid-cols-2 gap-10 transition-all animate-fade">
+            <div class="grid lg:grid-cols-2 gap-10 transition-all animate-fade">
                 <div>
-                    <img src="../../Imgs/grid_gal7_sq.jpeg" alt="coffee cup" class="w-auto" />
+                    <img src="../../Imgs/grid_gal7_sq.jpeg" alt="coffee cup" class="mx-auto" />
                 </div>
-                <div class="text-center md:text-left basis-3/6">
+                <div class="text-center lg:text-left basis-3/6">
                     <h6 class="text-lg md:text-2xl mb-4">
                         At Rhodes Coffee Co., we're more than just a coffee truck -
                         we're purveyors of exceptional experiences. Our services extend beyond serving delicious,
@@ -47,7 +47,7 @@
         <!-- Mission -->
         <section
             style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imgs/started_img_n3.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="text-center flex flex-col py-32 px-5 md:px-20">
+            <div class="text-center flex flex-col py-32 px-5 lg:px-20">
                 <div class="flex gap-7 mx-auto text-[#c8d6ca]">
                     <h1 class="text-4xl md:text-6xl "> Our Mission </h1>
                 </div>
@@ -74,9 +74,9 @@
 
         <!-- Commitment -->
         <section class="bg-[#C8D5CA]">
-            <div class="text-center py-16 px-5 md:px-52">
+            <div class="text-center py-16 px-5 md:px-20 lg:px-40 xl:px-52">
                 <div class="flex flex-col gap-7 mx-auto">
-                    <h1 class="text-4xl md:text-6xl "> Our Commitment </h1>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl "> Our Commitment </h1>
                     <p class="text-[1rem]">
                         At Rhodes Coffee Co, we are more than just purveyors of delicious coffee and
                         delectable treats; we are stewards of ethical consumption and guardians of community well-being.
@@ -98,25 +98,27 @@
                         a time. Thank you for your support in our journey toward a more ethical and sustainable future.
                     </p>
                 </div>
-                <div class="flex items-end justify-center gap-36 mt-28">
+                <div class="grid grid-cols-2 xs:grid-cols-4 items-end justify-center gap-y-12 lg:gap-36 mt-10 md:mt-28">
                     <div class="flex flex-col gap-5">
                         <!-- <img src="../../Imgs/choose_icon1.png" class="w-28" /> -->
-                        <p class="text-8xl text-[#EA9Fb3]"> <i class="fa-brands fa-pagelines"></i> </p>
+                        <p class="text-7xl md:text-8xl text-[#EA9Fb3]"> <i class="fa-brands fa-pagelines"></i> </p>
                         <p class="text-lg font-semibold">Organic</p>
                     </div>
                     <div class="flex flex-col gap-5">
                         <!-- <img src="../../Imgs/choose_icon2.png" class="w-28" /> -->
-                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="fa fa-map-location-dot"></i> </p>
+                        <p class="text-7xl md:text-8xl text-[#EA9Fb3] font-light"> <i
+                                class="fa fa-map-location-dot"></i> </p>
                         <p class="text-lg font-semibold">Local</p>
                     </div>
                     <div class="flex flex-col gap-5">
                         <!-- <img src="../../Imgs/parallax_icon2.png" class="w-20" /> -->
-                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="far fa-handshake"></i> </p>
+                        <p class="text-7xl md:text-8xl text-[#EA9Fb3] font-light"> <i class="far fa-handshake"></i> </p>
                         <p class="text-lg font-semibold">Ethical</p>
                     </div>
 
                     <div class="flex flex-col gap-5">
-                        <p class="text-8xl text-[#EA9Fb3] font-light"> <i class="fa fa-people-group"></i> </p>
+                        <p class="text-7xl md:text-8xl text-[#EA9Fb3] font-light"> <i class="fa fa-people-group"></i>
+                        </p>
                         <p class="text-lg font-semibold">Comunity centered</p>
                     </div>
                 </div>
@@ -158,7 +160,7 @@
                     <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal6.jpeg" alt="g10">
                 </div>
             </div>
-            <div class="grid gap-4">
+            <div class="md:grid gap-4 hidden">
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="../../Imgs/grid_gal21.jpeg" alt="g11">
                 </div>

@@ -27,25 +27,23 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $validInputs = $request->validate([
-            'name' => 'required|string',
-            'email' => 'required|string',
-            'phone' => 'nullable|string',
-            'event_date' => 'nullable|date',
-            'event_address' => 'nullable|string',
-            'general_question' => 'nullable|string',
-            'subject' => 'nullable|string',
-            'message' => 'nullable|string',
-        ]);
-        
         try 
         {
-            $contact = Contact::create($validInputs);
-            Mail::to(env('MAIL_TO_ADDRESS'))->send(new ContactFormMail($contact));
+            // $contact = Contact::create($validInputs);
+            $inputs = (object)$request->all();
+
+            // Mail::to('contact.shahidul@gmail.com')
+            Mail::to('hello@rhodescoffeeco.com')
+            ->cc([
+                'contact@rhodescoffeeco.com',
+                'rhodescoffeecoo@gmail.com'
+            ])
+            ->send(new ContactFormMail($inputs));
             return back()->with('message', 'Thanks for contacting us.');
         }
         catch (\Throwable $th) {
-            return back()->with(['exception' => $th->getMessage()]);
+            return back()->withInput()
+            ->with(['exception' => $th->getMessage()]);
         }
     }
 
