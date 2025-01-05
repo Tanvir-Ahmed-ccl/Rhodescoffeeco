@@ -17,15 +17,16 @@
 
                 <p>hello@rhodescoffeeco.com,</p>
                 <p>(315) 430-5996</p>
-                <p>4759 Salina St, Pulaski, NY 13142</p>
+                <p>Pulaski, New York</p>
 
-                <p>
-                    <a href="https://www.instagram.com/rhodescoffeeco/"> <i class="fa-brands fa-instagram text-3xl"></i>
-                    </a>
-                </p>
+                <div class="flex gap-3">
+                    <p><a href="https://www.instagram.com/rhodescoffeeco/"> <i class="fa-brands fa-instagram text-3xl"></i></a></p>
+                    <p><a href="https://www.facebook.com/rhodescoffeeco/"> <i class="fa-brands fa-facebook text-3xl"></i></a></p>
+                </div>
+
 
                 <div class="flex flex-col gap-3">
-                    <p>Hours</p>
+                    <!-- <p>Hours</p> -->
                     <p>
                         Open: Thursday-Sunday
                     </p>

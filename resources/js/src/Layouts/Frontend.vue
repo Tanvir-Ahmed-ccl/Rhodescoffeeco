@@ -14,7 +14,7 @@
                 <Link href="/contact"
                     class="uppercase hidden md:flex py-3 px-6 bg-[#d69c46] hover:bg-[#d69c46e3] text-lg"
                     :class="scrollPosition > 100 ? 'border-gray-800' : ''">
-                Get Started
+                    Get A Quote
                 </Link>
                 <button type="button" @click.prevent="mobileMenuToggle"
                     class="text-white items-center p-2 w-10 h-10 justify-center text-sm rounded-lg"
@@ -28,7 +28,7 @@
                         <Link href="/our-story">Our Story</Link>
                     </li>
                     <li class=" border-t-2 border-gray-300 px-5 py-3">
-                        <Link href="/faqs">FAQs</Link>
+                        <Link href="/faqs">FAQ</Link>
                     </li>
                     <li class=" border-t-2 border-gray-300 px-5 py-3">
                         <Link href="/imgs/menu.pdf">Explore Menu</Link>
@@ -51,11 +51,11 @@
                     </li>
                     <li>
                         <Link href="/faqs" class="block py-2 px-3 rounded md:p-0 "
-                            :class="scrollPosition > 100 ? 'text-gray-800' : 'text-gray-300'">FAQs</Link>
+                            :class="scrollPosition > 100 ? 'text-gray-800' : 'text-gray-300'">FAQ</Link>
                     </li>
                     <li>
-                        <a href="/imgs/menu.pdf" target="_blank" class="block py-2 px-3 rounded md:p-0 "
-                            :class="scrollPosition > 100 ? 'text-gray-800' : 'text-gray-300'">Explore Menus</a>
+                        <Link href="/menu" target="_blank" class="block py-2 px-3 rounded md:p-0 "
+                            :class="scrollPosition > 100 ? 'text-gray-800' : 'text-gray-300'">Explore Menus</Link>
                     </li>
                     <li>
                         <Link href="/blogs" class="block py-2 px-3 rounded md:p-0 "
@@ -84,7 +84,7 @@
             <img src="../Imgs/updated_logo.png" alt="sun-logo" class="h-40 w-40 mx-auto" />
             <p>hello@rhodescoffeeco.com</p>
             <p>(315) 430-5996</p>
-            <p>4759 Salina St, Pulaski, NY 13142</p>
+            <p>Pulaski, New York</p>
         </div>
         <div class="flex flex-col gap-7">
             <h1 class="text-xl font-semibold">Questions?</h1>

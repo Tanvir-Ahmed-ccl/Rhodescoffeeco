@@ -13,3 +13,4 @@ Route::get('contact', [FrontPageController::class, 'contact']);
 Route::post('contact', [ContactController::class, 'store']);
 Route::post('/subscribe', [SubscribersController::class, 'store']);
 Route::get('/blogs', [FrontPageController::class, 'blogs']);
+Route::get('/menu', [FrontPageController::class, 'menu']);
