@@ -14,7 +14,7 @@
             <div class="flex flex-col lg:flex-row gap-10">
                 <div>
                     <h1 class="text-3xl text-center lg:text-left lg:text-5xl font-semibold">Who Am I:</h1>
-                    <h4 class="mt-5 lg:text-xl lg:leading-10">
+                    <h4 class="mt-5 lg:text-xl lg:leading-10 text-justify">
                         Welcome! I'm Tricia, a dedicated mom, a proud veteran, and the passionate founder of Rhodes
                         Coffee Company. My journey has been shaped by my roles as a caregiver and a service member,
                         teaching me the importance of community, discipline, and love. These values are the foundation
@@ -31,14 +31,33 @@
             </div>
 
 
-            <div class="mt-20 grid lg:grid-cols-3 items-center gap-10">
-                <div class="lg:col-span-1">
+            <div
+                class="text-gray-800 text-lg lg:text-xl lg:leading-8 flex flex-col lg:flex-row mt-20 gap-20">
+                <div class="flex flex-col order-2">
+                    <h1 class="text-3xl lg:text-5xl font-semibold">Rhodes Coffee Co. Cart:</h1>
+                    <h5 class="mt-10 text-lg lg:text-xl lg:leading-8 leading-8">
+                        With our most recent addition, we're delighted to offer coffee cart catering using a chic,
+                        highly
+                        maneuverable beverage cart that brings a touch of refinement to any event. Tailored for private
+                        gatherings, corporate functions, and catering needs - just head to our contact page, provide
+                        event
+                        particulars, and request pricing details.
+                    </h5>
+                </div>
+
+                <div>
+                    <img src="../../Imgs/pics/Cold Brew + Sweet Cream.jpg" class="mx-auto w-[70rem]" />
+                </div>
+            </div>
+
+            <div class="mt-20 grid lg:grid-cols-3 items-start gap-10">
+                <div class="lg:col-span-1 order-2">
                     <img src="../../Imgs/pics/Trailer.jpg" alt="picture of trailer" class="mx-auto" />
                 </div>
 
                 <div class="lg:col-span-2">
-                    <h1 class="text-3xl md:text-5xl font-semibold">Rhodes Coffee Co:</h1>
-                    <h4 class="mt-3">
+                    <h1 class="text-3xl md:text-5xl font-semibold">Rhodes Coffee Co: Coffee Trailer</h1>
+                    <h4 class="mt-3 lg:text-xl lg:leading-10 text-justify">
                         Established in 2023, Rhodes Coffee Co. is a mobile coffee bar and café based in Pulaski, New
                         York,
                         specializing in organic, fair-trade coffee. The inspiration for this venture stemmed from a
@@ -62,25 +81,6 @@
                         November,
                         open Thursday through Sunday.
                     </h4>
-                </div>
-            </div>
-
-            <div
-                class="text-gray-800 text-lg lg:text-xl lg:leading-8 flex flex-col lg:flex-row mt-20 items-center gap-20">
-                <div class="flex flex-col">
-                    <h1 class="text-3xl lg:text-5xl font-semibold">Rhodes Coffee Co. Cart:</h1>
-                    <h5 class="mt-10 text-lg lg:text-xl lg:leading-8 leading-8">
-                        With our most recent addition, we're delighted to offer coffee cart catering using a chic,
-                        highly
-                        maneuverable beverage cart that brings a touch of refinement to any event. Tailored for private
-                        gatherings, corporate functions, and catering needs - just head to our contact page, provide
-                        event
-                        particulars, and request pricing details.
-                    </h5>
-                </div>
-
-                <div>
-                    <img src="../../Imgs/pics/Cold Brew + Sweet Cream.jpg" class="mx-auto w-[70rem]" />
                 </div>
             </div>
 

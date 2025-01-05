@@ -2,7 +2,7 @@
     <!-- Testimonial -->
     <section class="flex flex-col px-5 md:px-20 py-32">
         <div class="text-center mb-10">
-            <h1 class="text-4xl md:text-6xl">Testimonial</h1>
+            <h1 class="text-4xl md:text-6xl">5 Star Reviews</h1>
             <div class="border border-y-2 rounded-lg border-yellow-600 w-32 mt-5 mx-auto"></div>
         </div>
 

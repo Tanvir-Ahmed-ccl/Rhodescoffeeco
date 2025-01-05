@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{config('app.name')}}</title>
+        <title>Coffee Cart Catering | Mobile Espresso Bar | Central New York</title>
 
         <link rel="shortcut icon" href="{{asset('favs/favicon-32x32.png')}}" type="image/x-icon">
 

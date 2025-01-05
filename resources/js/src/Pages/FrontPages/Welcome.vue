@@ -3,7 +3,7 @@
         <section class="min-h-screen px-5 md:px-20 flex flex-col justify-end"
             style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/started_img_n5.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
             <div class="py-28 text-center md:text-left text-[#c8d6ca] transition-all animate-fade">
-                <h1 class="text-5xl md:text-6xl font-semibold">Rhodes Coffee Co.: Brewed from Life's Adventures.</h1>
+                <h1 class="text-5xl md:text-6xl font-semibold">Coffee Cart Catering for Your Next Event.</h1>
                 <h5 class="my-10 text-2xl">Coffee Cart Available for Catering</h5>
                 <YellowBtn text="Book Now" redirectTo="/contact" />
             </div>
@@ -12,7 +12,7 @@
         <!-- Ocasion -->
         <section class="bg-[#f0dde0] flex flex-col gap-10 py-32 px-5 lg:px-20">
             <div class="text-center transition-all animate-fade">
-                <h1 class="text-4xl md:text-6xl">Catering for All Occasions</h1>
+                <h1 class="text-4xl md:text-6xl">Coffee Catering for All Occasions</h1>
                 <div class="border border-y-2 rounded-lg border-yellow-600 w-32 my-5 mx-auto"></div>
                 <!-- <h5 class="mt-12s text-2xl">But not limited to</h5> -->
             </div>
@@ -55,16 +55,7 @@
                 <div class="text-gray-200 px-5 text-center md:px-24 lg:px-48 mt-14 ">
                     <i class="fa fa-quote-left text-5xl"></i>
                     <p class="text-lg">
-                        Inspired by the road [Rhode] - the unexpected places life takes us, the people we meet, and
-                        ultimately -
-                        the place we call home - Rhodes Coffee Co. is an homage to our roots. Rooted in the belief that
-                        life
-                        is
-                        best lived authentically and organically - and as close to nature as possible. Rhodes Coffee Co.
-                        strives
-                        to be a catalyst for positive change with thoughtfully sourced organic coffee & ingredients +
-                        small
-                        batch, artisanal products at an affordable price
+                        Inspired by the road [Rhode]—the unexpected places life takes us, the people we meet, and ultimately, the place we call home—Rhodes Coffee Co. is an homage to our roots. Rooted in the belief that life is best lived authentically, organically, and close to nature, we proudly offer organic, fair-trade coffee that reflects our commitment to these values
                     </p>
                     <i class="fa fa-quote-right text-5xl"></i>
                     <p class="mb-5 text-lg">Tricia Hax, Owner</p>
@@ -77,7 +68,7 @@
             <div class="text-center py-16 px-5 md:px-20 lg:px-40 xl:px-52">
                 <div class="flex flex-col gap-7 mx-auto">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl "> Our Commitment </h1>
-                    <p class="text-[1rem]">
+                    <!-- <p class="text-[1rem]">
                         At Rhodes Coffee Co, we are more than just purveyors of delicious coffee and
                         delectable treats; we are stewards of ethical consumption and guardians of community well-being.
                         With a firm commitment to sustainability, social responsibility, and environmental stewardship,
@@ -96,9 +87,26 @@
                         you're joining us in our mission to make a positive impact on the world around us. Together, we
                         can create a brighter future for generations to come, one mindful sip and one thoughtful bite at
                         a time. Thank you for your support in our journey toward a more ethical and sustainable future.
+                    </p> -->
+
+                    <p class="text-xl">
+                        What to expect with a full mobile espresso bar for your event or gathering
                     </p>
+
+                    <ul class="text-left list-disc mx-auto">
+                        <li>Fresh, organic, fair-trade coffee</li>
+                        <li>Full Espresso Bar Menu: Espresso, Latte, Cortado, Cappuccino</li>
+                        <li>Alternative Milk Options and Organic Syrups</li>
+                        <li>Unlimited Drinks</li>
+                        <li>Alternative Drinks: Hot Chocolate, Matcha, Tea, Chai</li>
+                        <li>Custom Branding Packages</li>
+                    </ul>
+
+                    <div class="mt-6">
+                        <YellowBtn text="Request a Quote Today" redirectTo="/contact" />
+                    </div>
                 </div>
-                <div class="grid grid-cols-2 xs:grid-cols-4 items-end justify-center gap-y-12 lg:gap-36 mt-10 md:mt-28">
+                <div class="grid grid-cols-2 lg:grid-cols-4 items-end justify-center gap-y-12 lg:gap-36 mt-10 md:mt-28">
                     <div class="flex flex-col gap-5">
                         <!-- <img src="../../Imgs/choose_icon1.png" class="w-28" /> -->
                         <p class="text-7xl md:text-8xl text-[#EA9Fb3]"> <i class="fa-brands fa-pagelines"></i> </p>
