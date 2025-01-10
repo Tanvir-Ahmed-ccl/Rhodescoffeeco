@@ -21,7 +21,7 @@
 
                 <div class="flex gap-3">
                     <p><a href="https://www.instagram.com/rhodescoffeeco/"> <i class="fa-brands fa-instagram text-3xl"></i></a></p>
-                    <p><a href="https://www.facebook.com/rhodescoffeeco/"> <i class="fa-brands fa-facebook text-3xl"></i></a></p>
+                    <p><a href="https://www.facebook.com/profile.php?id=100091245697148"> <i class="fa-brands fa-facebook text-3xl"></i></a></p>
                 </div>
 
 
@@ -37,10 +37,10 @@
                 </div>
             </div>
 
-            <div class="lg:pl-32">
+            <div class="lg:pl-12">
                 <h3 class="text-2xl font-semibold ">Request an Event Quote</h3>
 
-                <fwb-alert closable icon border type="success" v-if="$page.props.flash.message">{{
+                <!-- <fwb-alert closable icon border type="success" v-if="$page.props.flash.message">{{
                     $page.props.flash.message }}</fwb-alert>
                 <fwb-alert closable icon border type="danger" v-if="$page.props.flash.exception">{{
                     $page.props.flash.exception }}</fwb-alert>
@@ -167,7 +167,14 @@
                                 class="ml-2 fa fa-arrow-right"></i>
                         </button>
                     </div>
-                </form>
+                </form> -->
+                <iframe 
+                    name="lc_contact_form" 
+                    frameborder="0" 
+                    width="100%" 
+                    height="1200"
+                    src="https://rhodescoffeeco.17hats.com/p#/embed/hsffckwrrbbwhbnthxtzhgzgfsshwxgv"
+                ></iframe>
             </div>
         </section>
 
