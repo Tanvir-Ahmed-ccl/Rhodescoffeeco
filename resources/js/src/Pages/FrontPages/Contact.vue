@@ -15,7 +15,7 @@
                 <p>Whether you have a question, feedback, or want to inquire about our catering services, we're here to
                     help! Reach out to us through any of the following channels:</p>
 
-                <p>hello@rhodescoffeeco.com,</p>
+                <p> contact@rhodescoffeeco.com,</p>
                 <p>(315) 430-5996</p>
                 <p>Pulaski, New York</p>
 

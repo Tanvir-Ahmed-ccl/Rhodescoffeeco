@@ -67,7 +67,7 @@
         <section class="bg-[#C8D5CA]">
             <div class="text-center py-16 px-5 md:px-20 lg:px-40 xl:px-52">
                 <div class="flex flex-col gap-7 mx-auto">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl "> What to expect </h1>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold"> What to expect </h1>
                     <!-- <p class="text-[1rem]">
                         At Rhodes Coffee Co, we are more than just purveyors of delicious coffee and
                         delectable treats; we are stewards of ethical consumption and guardians of community well-being.
