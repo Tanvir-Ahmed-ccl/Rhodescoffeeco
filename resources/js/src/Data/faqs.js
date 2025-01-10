@@ -22,12 +22,17 @@ const faqs = [
   {
     id: 5,
     query: "What areas do you serve?",
-    answer: "We serve the greater Central New York area and beyond – we are happy to travel!",
+    answer: "We  serve the greater Central New York region and beyond, including Syracuse, Watertown, Oswego, the Adirondacks, and more. Wherever you are, we’re happy to travel!",
   },
   {
     id: 6,
     query: "What’s included in your coffee cart menu?",
     answer: "For every event we provide an espresso based drink menu, professional baristas, professional Italian espresso machine and grinder, freshly roasted, organic coffee beans, milk and dairy alternatives, a tea selection, cups, lids, condiments, and stir sticks, syrups and sauces, and an extension cord",
+  },
+  {
+    id: 7,
+    query: " Whats included in your menu section?",
+    answer: "We offer upgrades such as drip coffee, cold brew, decaf, and hot chocolate upon request. For SEO optimization I really want to high light the location with keywords such as “Central New York, Syracuse, Watertown, Oswego, and beyond” - this will be crucial to generating leads"
   },
   // {
   //   id: 7,

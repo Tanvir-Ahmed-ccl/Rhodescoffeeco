@@ -25,8 +25,8 @@
                 </div>
 
 
-                <div class="flex flex-col gap-3">
-                    <!-- <p>Hours</p> -->
+                <!-- <div class="flex flex-col gap-3">
+                    <p>Hours</p>
                     <p>
                         Open: Thursday-Sunday
                     </p>
@@ -34,7 +34,7 @@
                     <p>
                         Closed: Monday-Wednesday
                     </p>
-                </div>
+                </div> -->
             </div>
 
             <div class="lg:pl-12">
