@@ -82,16 +82,15 @@
         <div class="flex flex-col">
             <h1 class="text-xl font-semibold">Stay in touch</h1>
             <img src="../Imgs/updated_logo.png" alt="sun-logo" class="h-40 w-40 mx-auto" />
-            <p>hello@rhodescoffeeco.com</p>
-            <p>(315) 430-5996</p>
-            <p>Pulaski, New York</p>
+            <p>{{ $page.props.app_info.contact_email }}</p>
+            <p>{{ $page.props.app_info.contact_phone }}</p>
+            <p>{{ $page.props.app_info.contact_address }}</p>
         </div>
         <div class="flex flex-col gap-7">
             <h1 class="text-xl font-semibold">Questions?</h1>
-            <a href="/">Contact Us</a>
-            <a href="https://www.instagram.com/rhodescoffeeco"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
-            <a href="https://www.facebook.com/profile.php?id=100091245697148"> <i
-                    class="fa-brands fa-facebook text-3xl"></i> </a>
+            <Link href="/contact">Contact Us</Link>
+            <a :href="$page.props.app_info.social_media.instagram"> <i class="fa-brands fa-instagram text-3xl"></i> </a>
+            <a :href="$page.props.app_info.social_media.facebook"> <i class="fa-brands fa-facebook text-3xl"></i> </a>
         </div>
         <div class="">
             <ul class="flex flex-col gap-5">
@@ -116,11 +115,13 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { Link } from "@inertiajs/vue3";
 import WhiteBtnVue from '../Components/WhiteBtn.vue';
 import YellowBtn from "../Components/YellowBtn.vue";
+import { usePage } from "@inertiajs/vue3";
 
+const page = usePage();
 let mobileMenuVisible = ref(false);
 const mobileMenuToggle = () => {
     mobileMenuVisible.value = !mobileMenuVisible.value;

@@ -40,6 +40,17 @@ class HandleInertiaRequests extends Middleware
                 'message' => fn () => $request->session()->get('message'),
                 'exception' => fn () => $request->session()->get('exception')
             ],
+            'app_info' => [
+                'app_name' => 'Rhodes Coffee Co',
+                'app_title' => 'Coffee Cart Catering | Mobile Espresso Bar | Central New York',
+                'contact_email' => 'contact@rhodescoffeeco.com',
+                'contact_phone' => '(315) 430-5996',
+                'contact_address' => 'Pulaski, New Work',
+                'social_media' => [
+                    'facebook' => 'https://www.facebook.com/profile.php?id=100091245697148',
+                    'instagram' => 'https://www.instagram.com/rhodescoffeeco',
+                ]
+            ]
         ]);
     }
 }
