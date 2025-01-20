@@ -1,207 +1,221 @@
 <template>
     <AdminLayout>
-        <!-- Page Title -->
-        <section class="px-5 md:px-20 flex flex-col justify-end"
-            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/history_inner_bg1.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: top;">
-            <div class="pt-36 pb-20 md:py-44 text-center text-[#c8d6ca] transition-all animate-fade">
-                <h1 class="text-4xl md:text-7xl font-semibold italic">Let's Make it Happen</h1>
-            </div>
-        </section>
+        <!-- Hero Section -->
+        <ParallaxSection
+            backgroundImage="imgs/history_inner_bg1.jpeg"
+            title="Let's Make it Happen"
+            subtitle="Crafted Moments, Brewed by Rhodes"
+            ariaLabel="Contact Rhodes Coffee Co. - Book your coffee cart service"
+            overlayOpacity="0.5"
+        />
 
-        <!-- Page Content -->
-        <section class="grid lg:grid-cols-2 gap-10 px-5 md:px-20 py-12 md:py-32 transition-all animate-fade">
-            <div class="flex flex-col gap-5">
-                <h5 class="text-gray-700 text-lg md:text-4xl font-semibold">Get in Touch with Rhodes Coffee Co.</h5>
-                <p>Whether you have a question, feedback, or want to inquire about our catering services, we're here to
-                    help! Reach out to us through any of the following channels:</p>
-
-                <p> contact@rhodescoffeeco.com,</p>
-                <p>(315) 430-5996</p>
-                <p>Pulaski, New York</p>
-
-                <div class="flex gap-3">
-                    <p><a href="https://www.instagram.com/rhodescoffeeco/"> <i class="fa-brands fa-instagram text-3xl"></i></a></p>
-                    <p><a href="https://www.facebook.com/profile.php?id=100091245697148"> <i class="fa-brands fa-facebook text-3xl"></i></a></p>
+        <!-- Contact Content -->
+        <section
+            class="grid lg:grid-cols-2 gap-10 px-5 md:px-20 py-12 md:py-32 bg-brand-pink-light transition-all animate-fade"
+        >
+            <div class="flex flex-col gap-8">
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-serif text-gray-800">
+                        Get in Touch with Rhodes Coffee Co.
+                    </h2>
+                    <p class="text-gray-600 text-lg">
+                        Whether you have a question, feedback, or want to
+                        inquire about our catering services, we're here to help!
+                        Reach out to us through any of the following channels:
+                    </p>
                 </div>
 
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 text-gray-700">
+                        <Mail class="w-5 h-5 text-brand-sage-dark" />
+                        <a
+                            href="mailto:contact@rhodescoffeeco.com"
+                            class="hover:text-brand-pink-dark transition-colors"
+                        >
+                            contact@rhodescoffeeco.com
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-700">
+                        <Phone class="w-5 h-5 text-brand-sage-dark" />
+                        <a
+                            href="tel:+13154305996"
+                            class="hover:text-brand-pink-dark transition-colors"
+                        >
+                            (315) 430-5996
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-700">
+                        <MapPin class="w-5 h-5 text-brand-sage-dark" />
+                        <span>Pulaski, New York</span>
+                    </div>
+                </div>
 
-                <!-- <div class="flex flex-col gap-3">
-                    <p>Hours</p>
-                    <p>
-                        Open: Thursday-Sunday
-                    </p>
-
-                    <p>
-                        Closed: Monday-Wednesday
-                    </p>
-                </div> -->
+                <div class="flex gap-6">
+                    <a
+                        href="https://www.instagram.com/rhodescoffeeco/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-red-900 p-2 rounded-full hover:bg-gray-100 transition-colors duration-300"
+                        aria-label="Follow us on Instagram"
+                    >
+                        <Instagram class="w-6 h-6 text-brand-sage" />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100091245697148"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-blue-900 p-2 rounded-full hover:bg-gray-100 transition-colors duration-300"
+                        aria-label="Follow us on Facebook"
+                    >
+                        <Facebook class="w-6 h-6 text-brand-sage" />
+                    </a>
+                </div>
             </div>
 
-            <div class="lg:pl-12">
-                <h3 class="text-2xl font-semibold ">Request an Event Quote</h3>
+            <div class="lg:pl-12 bg-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-serif text-gray-800 mb-8">
+                    Request an Event Quote
+                </h3>
 
-                <!-- <fwb-alert closable icon border type="success" v-if="$page.props.flash.message">{{
-                    $page.props.flash.message }}</fwb-alert>
-                <fwb-alert closable icon border type="danger" v-if="$page.props.flash.exception">{{
-                    $page.props.flash.exception }}</fwb-alert>
-
-                <form class="flex flex-col gap-5 mt-10"
-                    @submit.prevent="form.post('/contact', { onSuccess: () => form.reset() })">
-                    <div class="relative z-0">
-                        <input type="text" id="full_name" required v-model="form.name"
-                            class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" " />
-                        <label for="full_name"
-                            class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Name / Company
-                        </label>
-                        <p v-if="form.errors.name" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                    form.errors.name }}</p>
-                    </div>
-
-                    <div class="relative z-0">
-                        <input type="text" id="email" required v-model="form.email"
-                            class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" " />
-                        <label for="email"
-                            class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Email Address
-                        </label>
-                        <p v-if="form.errors.email" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                    form.errors.email }}</p>
-                    </div>
-
-                    <div class="relative z-0">
-                        <input type="text" id="phone" v-model="form.phone"
-                            class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" " />
-                        <label for="phone"
-                            class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Phone Number
-                        </label>
-                        <p v-if="form.errors.phone" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                    form.errors.phone }}</p>
-                    </div>
-
-                    <div>
-                        <select id="underline_select" v-model="form.type_of_event"
-                            class="block py-2.5 px-0 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option value="type_of_event" selected disabled> Type of Event</option>
-                            <option value="Wedding">Wedding</option>
-                            <option value="Corporate or Office Event">Corporate or Office Event</option>
-                            <option value="Non-Profit or School">Non-Profit or School</option>
-                            <option value="Conference or Expo">Conference or Expo</option>
-                            <option value=" Church Event"> Church Event</option>
-                            <option value="Retail Event">Retail Event</option>
-                            <option value="Baby or Bridal Shower">Baby or Bridal Shower</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="relative z-0 mt-5">
-                        <input type="date" id="event_date" v-model="form.event_date"
-                            class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" " />
-                        <label for="event_date"
-                            class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Date of Event
-                        </label>
-                        <p v-if="form.errors.event_date" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                    form.errors.event_date }}</p>
-                    </div>
-
-                    <div class="relative z-0">
-                        <input type="text" id="event_address" v-model="form.event_address"
-                            class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" " />
-                        <label for="event_address"
-                            class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Event Location - Venue & Address
-                        </label>
-                        <p v-if="form.errors.event_address" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                    form.errors.event_address }}</p>
-                    </div>
-
-                    <div class="relative z-0">
-                        <input type="text" id="no_of_guest" v-model="form.no_of_guest"
-                            class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" " />
-                        <label for="no_of_guest"
-                            class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            No of Guests Expected
-                        </label>
-                        <p v-if="form.errors.no_of_guest" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                    form.errors.no_of_guest }}</p>
-                    </div>
-
-                    <div>
-                        <select id="underline_select" v-model="form.hear_us"
-                            class="block py-2.5 px-0 w-full text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                            <option value="hear_us" selected disabled> How did you hear about us?</option>
-                            <option value="Google Search"> Google Search</option>
-                            <option value="Instagram">Instagram</option>
-                            <option value="Facebook">Facebook</option>
-                            <option value="Friends or Family">Friends or Family</option>
-                            <option value="Venue/Event Planner">Venue/Event Planner</option>
-                            <option value="We’re a Repeat Client">We’re a Repeat Client</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="relative z-0">
-                        <textarea id="message" v-model="form.message"
-                            class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=""></textarea>
-                        <label for="message"
-                            class="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
-                            Tell us more about your event
-                        </label>
-                        <p v-if="form.errors.message" class="mt-2 text-sm text-red-600 dark:text-red-500">{{
-                    form.errors.message }}</p>
-                    </div>
-
-                    <div class="mt-3">
-                        <button :disabled="form.processing"
-                            class="lg:float-right uppercase items-center block w-full lg:w-auto lg:flex py-3 px-6 bg-[#ddc9cc] hover:bg-[#dbbdc2] text-black text-lg">
-                            <span v-if="form.processing">Processing ...</span> <span v-else>Send</span> <i
-                                class="ml-2 fa fa-arrow-right"></i>
+                <!-- Test Form (Development Only) -->
+                <div
+                    v-if="showTestForm"
+                    class="mb-8 p-4 bg-yellow-50 rounded-lg"
+                >
+                    <div class="flex justify-between items-center mb-4">
+                        <h4 class="font-semibold">Development Test Form</h4>
+                        <button
+                            @click="toggleForm"
+                            class="text-sm text-blue-600 hover:underline"
+                        >
+                            Switch to
+                            {{ showTestForm ? "17hats Form" : "Test Form" }}
                         </button>
                     </div>
-                </form> -->
-                <iframe 
-                    name="lc_contact_form" 
-                    frameborder="0" 
-                    width="100%" 
-                    height="1200"
-                    src="https://rhodescoffeeco.17hats.com/p#/embed/hsffckwrrbbwhbnthxtzhgzgfsshwxgv"
-                ></iframe>
+                    <form @submit.prevent="submitTestForm" class="space-y-4">
+                        <div>
+                            <label
+                                class="block text-sm font-medium text-gray-700 mb-1"
+                                >Name</label
+                            >
+                            <input
+                                v-model="testForm.name"
+                                type="text"
+                                class="w-full p-2 border rounded-md"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-medium text-gray-700 mb-1"
+                                >Email</label
+                            >
+                            <input
+                                v-model="testForm.email"
+                                type="email"
+                                class="w-full p-2 border rounded-md"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-medium text-gray-700 mb-1"
+                                >Event Date</label
+                            >
+                            <input
+                                v-model="testForm.eventDate"
+                                type="date"
+                                class="w-full p-2 border rounded-md"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-medium text-gray-700 mb-1"
+                                >Message</label
+                            >
+                            <textarea
+                                v-model="testForm.message"
+                                class="w-full p-2 border rounded-md"
+                                rows="4"
+                                required
+                            ></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            class="w-full bg-[#d69c46] hover:bg-[#b48032] text-white py-3 rounded-md transition-colors"
+                        >
+                            Submit Test Form
+                        </button>
+                    </form>
+                </div>
+
+                <!-- 17hats Form -->
+                <div v-else>
+                    <iframe
+                        name="lc_contact_form"
+                        frameborder="0"
+                        width="100%"
+                        height="1200"
+                        src="https://rhodescoffeeco.17hats.com/p#/embed/hsffckwrrbbwhbnthxtzhgzgfsshwxgv"
+                        title="Contact form for event booking"
+                        class="w-full"
+                    ></iframe>
+                </div>
             </div>
         </section>
 
-        <section>
+        <!-- Map Section -->
+        <section class="relative">
+            <div
+                class="absolute inset-0 bg-brand-sage/10 pointer-events-none"
+            ></div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11564.584150330187!2d-76.1269897!3d43.56184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d8358140e9fabf%3A0x2b06051bf3685f38!2sRhodes%20Coffee%20Co!5e0!3m2!1sen!2sus!4v1710689491419!5m2!1sen!2sus"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Rhodes Coffee Co. location map"
+                class="w-full"
+            ></iframe>
         </section>
     </AdminLayout>
 </template>
 
-
 <script setup>
-import AdminLayout from '../../Layouts/Frontend.vue';
-import { useForm } from '@inertiajs/vue3'
-import { FwbAlert } from 'flowbite-vue'
+import { ref } from "vue";
+import { router } from "@inertiajs/vue3";
+import AdminLayout from "../../Layouts/Frontend.vue";
+import ParallaxSection from "../../Components/ParallaxSection.vue";
+import {
+    Mail,
+    Phone,
+    MapPin,
+    Instagram,
+    Facebook,
+    Clock,
+} from "lucide-vue-next";
 
-const form = useForm({
-    name: '',
-    email: '',
-    phone: '',
-    type_of_event: 'type_of_event',
-    event_date: '',
-    event_address: '',
-    no_of_guest: '',
-    message: '',
-    hear_us: 'hear_us',
-})
+const showTestForm = ref(process.env.NODE_ENV === "development");
+const testForm = ref({
+    name: "",
+    email: "",
+    eventDate: "",
+    message: "",
+});
+
+const toggleForm = () => {
+    showTestForm.value = !showTestForm.value;
+};
+
+const submitTestForm = () => {
+    // Simulate form submission delay
+    setTimeout(() => {
+        // Redirect to quote submitted page
+        router.visit("/quote-submitted");
+    }, 500);
+};
 </script>
