@@ -28,7 +28,7 @@ class FrontPageController extends Controller
 
     public function blogs()
     {
-        return inertia()->render('FrontPages/Blogs');
+        return inertia()->render('FrontPages/Blog');
     }
 
     public function menu()

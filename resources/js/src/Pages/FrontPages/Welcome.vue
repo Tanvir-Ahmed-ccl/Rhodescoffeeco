@@ -13,7 +13,6 @@
 
             <!-- Parallax Section -->
             <ParallaxSection
-                backgroundImage="imgs/SELAH-19618-scaled.webp"
                 title="Rhodes:"
                 subtitle="Where every cup tells a story of quality, service, and memorable moments."
                 ariaLabel="Coffee Cart and Espresso Bar Catering in New York"

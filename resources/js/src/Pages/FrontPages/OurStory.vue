@@ -197,7 +197,7 @@
                     </div>
                     <div class="lg:w-2/5">
                         <img
-                            src="../../Imgs/pics/Trailer.jpg"
+                            :src="coffeeTrailerLocation"
                             alt="Rhodes Coffee Co. Trailer Location in Pulaski, New York"
                             class="rounded-2xl shadow-xl w-full"
                         />
@@ -235,6 +235,7 @@
 import AdminLayout from "../../Layouts/Frontend.vue";
 import ParallaxSection from "../../Components/ParallaxSection.vue";
 import YellowBtn from "../../Components/YellowBtn.vue";
+import coffeeTrailerLocation from '../../Imgs/pics/Trailer.jpg';
 import {
     Coffee,
     Heart,

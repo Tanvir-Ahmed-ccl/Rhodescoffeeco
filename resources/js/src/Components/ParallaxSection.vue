@@ -1,13 +1,6 @@
 <template>
     <section
-        class="relative min-h-[400px] w-full overflow-hidden"
-        :style="{
-            background: `url('${backgroundImage}')`,
-            backgroundAttachment: 'fixed',
-            backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-        }"
+        class="relative min-h-[400px] w-full overflow-hidden bg-brand-pink-light"
         :aria-label="ariaLabel"
     >
         <!-- Overlay -->
@@ -48,10 +41,6 @@
 
 <script setup>
 defineProps({
-    backgroundImage: {
-        type: String,
-        required: true,
-    },
     title: {
         type: String,
         default: "",
@@ -66,11 +55,11 @@ defineProps({
     },
     overlayClass: {
         type: String,
-        default: "bg-black",
+        default: "bg-brand-pink-dark",
     },
     overlayOpacity: {
         type: String,
-        default: "0.6",
+        default: "0.9",
     },
     ariaLabel: {
         type: String,

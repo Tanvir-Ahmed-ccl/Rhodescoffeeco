@@ -50,12 +50,12 @@
                 >
                     Book Your Event
                 </Link>
-                <Link
-                    href="/gallery"
+                <a
+                    href="#"
                     class="inline-block px-8 py-3 border-2 border-[#d69c46] text-[#d69c46] hover:bg-[#d69c46] hover:text-white text-lg transition-colors duration-300"
                 >
                     View Full Gallery
-                </Link>
+                </a>
             </div>
         </div>
 
@@ -111,38 +111,47 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import { Link } from "@inertiajs/vue3";
+import galleryImg1 from "../Imgs/grid_gal1.jpeg";
+import galleryImg2 from "../Imgs/grid_gal2.jpeg";
+import galleryImg3 from "../Imgs/grid_gal13.jpeg";
+import galleryImg4 from "../Imgs/grid_gal4.jpeg";
+import galleryImg5 from "../Imgs/grid_gal5.jpeg";
+import galleryImg6 from "../Imgs/grid_gal6.jpeg";
+import galleryImg7 from "../Imgs/grid_gal7.jpeg";
+import galleryImg8 from "../Imgs/grid_gal16.jpeg";
+
 
 const galleryImages = [
     {
-        src: "../Imgs/grid_gal1.jpeg",
+        src: galleryImg1,
         alt: "Coffee Cart at Corporate Rooftop Event",
     },
     {
-        src: "../Imgs/grid_gal2.jpeg",
+        src: galleryImg2,
         alt: "Specialty Latte Art",
     },
     {
-        src: "../Imgs/grid_gal13.jpeg",
+        src: galleryImg3,
         alt: "Professional Espresso Machine",
     },
     {
-        src: "../Imgs/grid_gal4.jpeg",
+        src: galleryImg4,
         alt: "Coffee Cart Setup",
     },
     {
-        src: "../Imgs/grid_gal5.jpeg",
+        src: galleryImg5,
         alt: "Custom Ritz-Carlton Coffee Branding",
     },
     {
-        src: "../Imgs/grid_gal6.jpeg",
+        src: galleryImg6,
         alt: "Coffee Cart Equipment Details",
     },
     {
-        src: "../Imgs/grid_gal7.jpeg",
+        src: galleryImg7,
         alt: "Professional Coffee Service",
     },
     {
-        src: "../Imgs/grid_gal16.jpeg",
+        src: galleryImg8,
         alt: "Outdoor Coffee Cart Setup",
     },
 ];
