@@ -65,56 +65,33 @@ export const blogPosts = [
         `,
     },
     {
-        title: "Seasonal Coffee Experiences: From Summer Refreshers to Winter Warmers",
+        title: "Top 5 Reasons to Include a Coffee Bar at Your Wedding",
         date: "2024-03-05",
         image: "grid_gal4.jpeg",
         excerpt:
-            "Explore how we adapt our coffee cart offerings to create perfect seasonal experiences year-round.",
+            "Make your wedding unforgettable with Rhodes Coffee Cart! From energizing espressos to custom-crafted lattes, our mobile coffee bar adds a stylish and delicious touch to your big day. Perfect for pairing with desserts or creating a cozy gathering spot, it’s the experience your guests will love and remember.",
         author: "Tricia Hax",
         content: `
-            <p>At Rhodes Coffee Co., we believe that every season deserves its own special coffee experience. Our mobile coffee cart service adapts throughout the year to offer the perfect beverages for any weather or occasion.</p>
+            <p>At Rhodes Coffee Co., we know your wedding day deserves the perfect touch, and what better way to elevate your special event than with a coffee bar? Our mobile coffee cart service provides a unique, stylish, and delicious addition to your celebration.</p>
 
-            <h2>Summer Sensations</h2>
-            <p>When the temperature rises, we refresh our menu with cooling options:</p>
-            <ul>
-                <li>Nitro Cold Brew</li>
-                <li>Iced Lattes</li>
-                <li>Refreshing Fruit-Infused Drinks</li>
-                <li>Specialty Iced Teas</li>
-                <li>Cold Foam Creations</li>
-            </ul>
+            <h2>Top 5 Reasons to Include a Coffee Bar at Your Wedding</h2>
 
-            <h2>Autumn Ambiance</h2>
-            <p>Fall brings a whole new palette of flavors:</p>
-            <ul>
-                <li>Pumpkin Spice Specialties</li>
-                <li>Apple Cider Drinks</li>
-                <li>Maple-Infused Beverages</li>
-                <li>Warming Chai Lattes</li>
-                <li>Spiced Hot Chocolate</li>
-            </ul>
+            <h3>1. A Unique and Memorable Experience</h3>
+            <p>Make your wedding stand out with a one-of-a-kind coffee cart. Rhodes Coffee Cart blends seamlessly with any wedding theme, creating a chic, Instagram-worthy experience for your guests to enjoy.</p>
 
-            <h2>Winter Warmth</h2>
-            <p>Our winter menu focuses on comfort and coziness:</p>
-            <ul>
-                <li>Rich Hot Chocolates</li>
-                <li>Peppermint Mochas</li>
-                <li>Gingerbread Lattes</li>
-                <li>Vanilla Bean Steamers</li>
-                <li>Traditional Hot Coffee</li>
-            </ul>
+            <h3>2. Keeps the Energy High</h3>
+            <p>Weddings are long days, and your guests will appreciate the energy boost from freshly brewed coffee. Whether it’s a smooth espresso, a creamy latte, or a refreshing iced coffee, we’ll keep everyone fueled for the festivities.</p>
 
-            <h2>Spring Revival</h2>
-            <p>As nature awakens, so do our spring offerings:</p>
-            <ul>
-                <li>Lavender Lattes</li>
-                <li>Honey-Infused Drinks</li>
-                <li>Floral Tea Selection</li>
-                <li>Light Fruit Beverages</li>
-                <li>Fresh Herb Infusions</li>
-            </ul>
+            <h3>3. Customizable Menu for Everyone</h3>
+            <p>Our menu caters to all tastes. From classic coffee drinks to non-coffee options like chai lattes and hot chocolate, Rhodes Coffee Cart ensures there’s something for everyone to enjoy.</p>
 
-            <p>Each season brings its own magic, and we're here to enhance those moments with perfectly crafted beverages that complement the weather and occasion.</p>
+            <h3>4. Perfect Pairing with Dessert</h3>
+            <p>Complement your cake and sweet treats with our expertly crafted beverages. A coffee bar is the perfect addition to elevate your dessert table and delight your guests.</p>
+
+            <h3>5. A Relaxing Gathering Spot</h3>
+            <p>A coffee bar provides a cozy corner where guests can unwind, chat, and savor a warm (or cold) cup of perfection. Our professional baristas create a welcoming vibe that enhances the overall experience.</p>
+
+            <p>Let Rhodes Coffee Cart bring charm, flavor, and energy to your wedding day. It’s more than coffee—it’s an experience your guests will remember.</p>
         `,
     },
 ];

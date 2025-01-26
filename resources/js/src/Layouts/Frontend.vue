@@ -71,14 +71,16 @@
     </nav>
     <slot />
 
+    <FooterSection />
+
     <!-- Lets get started -->
-    <section class="bg-[#f0dde0] text-white text-center flex flex-col items-center gap-10 py-32 px-20">
+    <!-- <section class="bg-[#f0dde0] text-white text-center flex flex-col items-center gap-10 py-32 px-20">
         <h1 class="text-4xl md:text-6xl font-semibold text-gray-800">Let's Get Started.</h1>
         <YellowBtn class="mx-auto mt-5" text="Contact Us" redirectTo="/contact" />
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="grid md:grid-cols-3 text-center gap-10 py-24 px-20">
+    <!-- <footer class="grid md:grid-cols-3 text-center gap-10 py-24 px-20">
         <div class="flex flex-col">
             <h1 class="text-xl font-semibold">Stay in touch</h1>
             <img src="../Imgs/updated_logo.png" alt="sun-logo" class="h-40 w-40 mx-auto" />
@@ -111,13 +113,14 @@
 
     <div class="md:col-span-3 text-center py-3 text-sm bg-[#f0dde0]">
         <p> <i class="far fa-copyright"></i> 2024 Rhodescoffeeco. All rights reserved.</p>
-    </div>
+    </div> -->
 </template>
 
 <script setup>
 import { computed, onMounted, ref } from "vue";
 import { Link } from "@inertiajs/vue3";
 import WhiteBtnVue from '../Components/WhiteBtn.vue';
+import FooterSection from '../Components/Footer.vue';
 import YellowBtn from "../Components/YellowBtn.vue";
 import { usePage } from "@inertiajs/vue3";
 

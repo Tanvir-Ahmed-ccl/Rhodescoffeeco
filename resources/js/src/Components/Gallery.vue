@@ -1,116 +1,91 @@
 <template>
-    <section class="py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <h2
-                class="text-4xl md:text-5xl font-semibold text-center text-gray-800 mb-6"
-            >
-                Elevate Any Event with Coffee Cart Catering
-            </h2>
+    <!-- Hero Section -->
+    <ParallaxSection
+        backgroundImage="imgs/started_img_n3.jpeg"
+        title="Our Gallery"
+        subtitle="Capturing moments of joy, one cup at a time"
+        overlayOpacity="0.6"
+        ariaLabel="Gallery Page"
+    />
 
-            <!-- Image Grid -->
+    <!-- Gallery Grid -->
+    <section class="py-24 bg-brand-sage-light">
+        <div class="container mx-auto px-4">
+            <!-- Gallery Description -->
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-4xl font-serif mb-6">
+                    Coffee Cart Moments
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Browse through our collection of memorable events, from
+                    intimate gatherings to grand celebrations. Each image
+                    tells a story of connection, craftsmanship, and the
+                    perfect cup of coffee.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
             <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             >
+                <!-- Gallery Items -->
                 <div
                     v-for="(image, index) in galleryImages"
                     :key="index"
-                    class="relative overflow-hidden group cursor-pointer"
+                    class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg"
                     @click="openLightbox(index)"
                 >
                     <img
                         :src="image.src"
                         :alt="image.alt"
-                        class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110"
+                        class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-30"
-                    >
-                        <div
-                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        >
-                            <i
-                                class="fa-solid fa-expand text-white text-2xl"
-                            ></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Caption -->
-            <p class="text-center text-lg text-gray-600 mt-8">
-                Bringing Premium Coffee Cart Experiences to Central & Upstate
-                New York (Syracuse, Watertown, North Country, and beyond)
-            </p>
-
-            <!-- Action Buttons -->
-            <div class="text-center mt-12 space-x-6">
-                <Link
-                    href="/contact"
-                    class="inline-block px-8 py-3 bg-[#d69c46] hover:bg-[#d69c46e3] text-white text-lg transition-colors duration-300"
-                >
-                    Book Your Event
-                </Link>
-                <a
-                    href="#"
-                    class="inline-block px-8 py-3 border-2 border-[#d69c46] text-[#d69c46] hover:bg-[#d69c46] hover:text-white text-lg transition-colors duration-300"
-                >
-                    View Full Gallery
-                </a>
-            </div>
-        </div>
-
-        <!-- Lightbox Modal -->
-        <div
-            v-if="lightboxOpen"
-            class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center"
-            @click.self="closeLightbox"
-        >
-            <div class="relative max-w-7xl mx-auto px-4">
-                <!-- Navigation Buttons -->
-                <button
-                    @click.stop="previousImage"
-                    class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#d69c46] transition-colors"
-                    aria-label="Previous image"
-                >
-                    <i class="fa-solid fa-chevron-left text-3xl"></i>
-                </button>
-
-                <button
-                    @click.stop="nextImage"
-                    class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#d69c46] transition-colors"
-                    aria-label="Next image"
-                >
-                    <i class="fa-solid fa-chevron-right text-3xl"></i>
-                </button>
-
-                <!-- Close Button -->
-                <button
-                    @click.stop="closeLightbox"
-                    class="absolute top-4 right-4 text-white hover:text-[#d69c46] transition-colors"
-                    aria-label="Close modal"
-                >
-                    <i class="fa-solid fa-times text-3xl"></i>
-                </button>
-
-                <!-- Image -->
-                <img
-                    :src="currentImage.src"
-                    :alt="currentImage.alt"
-                    class="max-h-[80vh] mx-auto object-contain"
-                />
-
-                <!-- Caption -->
-                <div class="text-center mt-4 text-white">
-                    <p class="text-lg">{{ currentImage.alt }}</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div
+        v-if="lightboxOpen"
+        class="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center"
+        @click="closeLightbox"
+    >
+        <div class="relative max-w-6xl mx-auto px-4">
+            <!-- Navigation Buttons -->
+            <button
+                @click.stop="previousImage"
+                class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-brand-pink transition-colors"
+            >
+                <i class="fas fa-chevron-left text-3xl"></i>
+            </button>
+            <button
+                @click.stop="nextImage"
+                class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-brand-pink transition-colors"
+            >
+                <i class="fas fa-chevron-right text-3xl"></i>
+            </button>
+            <!-- Close Button -->
+            <button
+                @click.stop="closeLightbox"
+                class="absolute top-4 right-4 text-white hover:text-brand-pink transition-colors"
+            >
+                <i class="fas fa-times text-3xl"></i>
+            </button>
+            <!-- Image -->
+            <img
+                :src="currentImage.src"
+                :alt="currentImage.alt"
+                class="max-h-[80vh] mx-auto"
+            />
+        </div>
+    </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from "vue";
-import { Link } from "@inertiajs/vue3";
+import { ref, computed } from "vue";
+import Frontend from "../Layouts/Frontend.vue";
+import ParallaxSection from "../Components/ParallaxSection.vue";
 import galleryImg1 from "../Imgs/grid_gal1.jpeg";
 import galleryImg2 from "../Imgs/grid_gal2.jpeg";
 import galleryImg3 from "../Imgs/grid_gal13.jpeg";
@@ -118,90 +93,88 @@ import galleryImg4 from "../Imgs/grid_gal4.jpeg";
 import galleryImg5 from "../Imgs/grid_gal5.jpeg";
 import galleryImg6 from "../Imgs/grid_gal6.jpeg";
 import galleryImg7 from "../Imgs/grid_gal7.jpeg";
-import galleryImg8 from "../Imgs/grid_gal16.jpeg";
+import galleryImg8 from "../Imgs/grid_gal11.jpeg";
+import galleryImg10 from "../Imgs/started_img_n3.jpeg";
 
+const lightboxOpen = ref(false);
+const currentImageIndex = ref(0);
 
 const galleryImages = [
     {
         src: galleryImg1,
-        alt: "Coffee Cart at Corporate Rooftop Event",
+        alt: "Coffee Cart Setup at Corporate Event",
+        caption:
+            "Corporate Event Setup - Bringing premium coffee experiences to professional gatherings",
     },
     {
         src: galleryImg2,
-        alt: "Specialty Latte Art",
+        alt: "Latte Art Showcase",
+        caption:
+            "Artisanal Latte Art - Each cup crafted with care and creativity",
     },
     {
         src: galleryImg3,
-        alt: "Professional Espresso Machine",
+        alt: "Outdoor Wedding Coffee Service",
+        caption:
+            "Wedding Day Moments - Creating memorable experiences for special celebrations",
     },
     {
         src: galleryImg4,
-        alt: "Coffee Cart Setup",
+        alt: "Coffee Cart Equipment",
+        caption:
+            "Professional Equipment - Quality tools for exceptional coffee service",
     },
     {
         src: galleryImg5,
-        alt: "Custom Ritz-Carlton Coffee Branding",
+        alt: "Coffee Service Team",
+        caption: "Our Expert Team - Passionate baristas delivering excellence",
     },
     {
         src: galleryImg6,
-        alt: "Coffee Cart Equipment Details",
+        alt: "Coffee Cart at Evening Event",
+        caption: "Evening Events - Elegant coffee service for any time of day",
     },
     {
         src: galleryImg7,
-        alt: "Professional Coffee Service",
+        alt: "Mobile Coffee Cart",
+        caption:
+            "Mobile Coffee Cart - Bringing the café experience to your location",
     },
     {
         src: galleryImg8,
-        alt: "Outdoor Coffee Cart Setup",
+        alt: "Coffee Drinks Display",
+        caption:
+            "Signature Drinks - A variety of coffee options for every taste",
+    },
+    {
+        src: galleryImg10,
+        alt: "Coffee Cart Ambiance",
+        caption: "Creating Ambiance - Setting the perfect mood for your event",
     },
 ];
 
-const lightboxOpen = ref(false);
-const currentIndex = ref(0);
-
-const currentImage = computed(() => galleryImages[currentIndex.value]);
+const currentImage = computed(() => galleryImages[currentImageIndex.value]);
 
 function openLightbox(index) {
-    currentIndex.value = index;
+    currentImageIndex.value = index;
     lightboxOpen.value = true;
-    document.body.style.overflow = "hidden";
 }
 
 function closeLightbox() {
     lightboxOpen.value = false;
-    document.body.style.overflow = "auto";
 }
 
-function nextImage() {
-    currentIndex.value = (currentIndex.value + 1) % galleryImages.length;
+function nextImage(e) {
+    e.stopPropagation();
+    currentImageIndex.value =
+        (currentImageIndex.value + 1) % galleryImages.length;
 }
 
-function previousImage() {
-    currentIndex.value =
-        (currentIndex.value - 1 + galleryImages.length) % galleryImages.length;
+function previousImage(e) {
+    e.stopPropagation();
+    currentImageIndex.value =
+        currentImageIndex.value === 0
+            ? galleryImages.length - 1
+            : currentImageIndex.value - 1;
 }
-
-// Handle keyboard navigation
-onMounted(() => {
-    const handleKeydown = (e) => {
-        if (!lightboxOpen.value) return;
-
-        switch (e.key) {
-            case "ArrowLeft":
-                previousImage();
-                break;
-            case "ArrowRight":
-                nextImage();
-                break;
-            case "Escape":
-                closeLightbox();
-                break;
-        }
-    };
-
-    window.addEventListener("keydown", handleKeydown);
-    onUnmounted(() => {
-        window.removeEventListener("keydown", handleKeydown);
-    });
-});
 </script>

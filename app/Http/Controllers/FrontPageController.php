@@ -31,6 +31,11 @@ class FrontPageController extends Controller
         return inertia()->render('FrontPages/Blog');
     }
 
+    public function quoteSubmitted()
+    {
+        return inertia()->render('FrontPages/QuoteSubmitted');
+    }
+
     public function menu()
     {
         return inertia()->render('FrontPages/Menu');

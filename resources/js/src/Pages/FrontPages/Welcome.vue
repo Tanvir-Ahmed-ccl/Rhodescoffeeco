@@ -6,23 +6,20 @@
                 backgroundImage="imgs/started_img_n5.jpeg"
                 title="Cheers"
                 subtitle="specialty coffee cart catering to elevate any event"
-                location="New York, NY"
+                location="Central & Upstate New York"
                 ctaText="Request a Quote"
                 ctaLink="/contact"
             />
 
             <!-- Parallax Section -->
-            <ParallaxSection
+            <!-- <ParallaxSection
                 title="Rhodes:"
                 subtitle="Where every cup tells a story of quality, service, and memorable moments."
                 ariaLabel="Coffee Cart and Espresso Bar Catering in New York"
-            />
+            /> -->
 
             <!-- Service Area Section -->
             <ServiceAreaSection />
-
-            <!-- Event Types Section -->
-            <EventTypesSection />
 
             <!-- Welcome Highlights -->
             <WelcomeHighlights />

@@ -17,7 +17,7 @@
                 <div class="text-center">
                     <figure>
                         <img
-                            src="../Imgs/about_img1.jpeg"
+                            :src="profileImage"
                             alt="Rhodes Coffee Co. Founder"
                             class="rounded-full mx-auto w-full max-w-md h-auto shadow-lg"
                             loading="lazy"
@@ -79,4 +79,5 @@
 
 <script setup>
 // No additional imports needed for this component
+import profileImage from '../Imgs/about_img1.jpeg';
 </script>
