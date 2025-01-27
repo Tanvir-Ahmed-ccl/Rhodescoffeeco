@@ -87,9 +87,9 @@
                     class="max-h-[80vh] mx-auto"
                 />
                 <!-- Caption -->
-                <div class="text-center mt-4 text-white">
+                <!-- <div class="text-center mt-4 text-white">
                     <p class="text-lg">{{ currentImage.caption }}</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </Frontend>

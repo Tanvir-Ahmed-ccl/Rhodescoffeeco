@@ -103,9 +103,9 @@
                 />
 
                 <!-- Caption -->
-                <div class="text-center mt-4 text-white">
+                <!-- <div class="text-center mt-4 text-white">
                     <p class="text-lg">{{ currentImage.alt }}</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
