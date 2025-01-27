@@ -90,7 +90,7 @@
             </div>
 
             <!-- Additional Info -->
-            <div class="mt-16 text-center">
+            <!-- <div class="mt-16 text-center">
                 <div
                     class="max-w-3xl mx-auto bg-white rounded-xl p-8 shadow-sm"
                 >
@@ -108,7 +108,7 @@
                         We are willing to travel!
                     </p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- CTA -->
             <div class="text-center mt-12">

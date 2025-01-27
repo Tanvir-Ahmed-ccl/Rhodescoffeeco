@@ -15,3 +15,4 @@ Route::post('/subscribe', [SubscribersController::class, 'store']);
 Route::get('/blogs', [FrontPageController::class, 'blogs']);
 Route::get('/quote-submitted', [FrontPageController::class, 'quoteSubmitted']);
 Route::get('/menu', [FrontPageController::class, 'menu']);
+Route::get('/gallery', [FrontPageController::class, 'gallery']);

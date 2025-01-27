@@ -40,4 +40,9 @@ class FrontPageController extends Controller
     {
         return inertia()->render('FrontPages/Menu');
     }
+
+    public function gallery()
+    {
+        return inertia()->render('FrontPages/Gallery');
+    }
 }
